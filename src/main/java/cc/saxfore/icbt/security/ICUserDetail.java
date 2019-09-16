@@ -1,4 +1,4 @@
-package cc.saxfore.icbt.service.impl;
+package cc.saxfore.icbt.security;
 
 import cc.saxfore.icbt.common.entity.IcUser;
 import cc.saxfore.icbt.service.IcUserService;
@@ -9,20 +9,20 @@ import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
-import org.springframework.stereotype.Service;
+import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
 import java.util.Collection;
 
 /**
  * 项目名称：icbt-user
- * 类 名 称：WebSecurityUserServiceImpl
+ * 类 名 称：ICUserDetail
  * 类 描 述：TODO
  * 创建时间：2019/9/9 5:08 PM
  * 创 建 人：wangjiang
  */
-//@Service
-public class WebSecurityUserServiceImpl implements UserDetailsService {
+@Component
+public class ICUserDetail implements UserDetailsService {
 
     @Autowired
     private IcUserService icUserService;

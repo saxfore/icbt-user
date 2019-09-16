@@ -1,8 +1,9 @@
-package cc.saxfore.icbt.config;
+package cc.saxfore.icbt.security;
 
 import cc.saxfore.icbt.common.util.ICJsonUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
@@ -11,22 +12,21 @@ import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
-//import cc.saxfore.icbt.service.impl.WebSecurityUserServiceImpl;
-
 
 /**
  * 项目名称：icbt-user
  * 类 名 称：WebSecurityConfig
- * 类 描 述：TODO
  * 创建时间：2019/9/9 5:01 PM
  * 创 建 人：wangjiang
+ * 类 描 述：使用{@link org.springframework.security.core.userdetails.UserDetailsService}的方式做权限认证
+ * 自定义认证切入时机顺序：ICAuthenticationManager ---> AuthenticationProvider ---> UserDetailsService
  */
 @EnableWebSecurity
-public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
-    private static final Logger log = LoggerFactory.getLogger(WebSecurityConfig.class);
+public class ICUserDetailConfig extends WebSecurityConfigurerAdapter {
+    private static final Logger log = LoggerFactory.getLogger(ICUserDetailConfig.class);
 
-//    @Autowired
-//    WebSecurityUserServiceImpl securityUserService;
+    @Autowired
+    ICUserDetail securityUserService;
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {
@@ -96,26 +96,9 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     }
 
     /**
-     * 启用自定义的{@link cc.saxfore.icbt.component.ICAuthenticationManager}做权限认证
-     * super.configure(auth) 代表spring从ioc容器中查找权限认证的类
-     * <p>
-     * 此方法与configure_bak(AuthenticationManagerBuilder auth)等效,区别在于自定义切入时机不同
-     * 自定义切入时机顺序：ICAuthenticationManager ---> AuthenticationProvider ---> UserDetailsService
-     *
-     * @param auth
-     * @throws Exception
-     */
-    @Override
-    protected void configure(AuthenticationManagerBuilder auth) throws Exception {
-        super.configure(auth);
-
-
-    }
-
-    /**
      * 启用自定义的UserDetailsService做权限认证
      * 启用该方法时修改名称为configure(AuthenticationManagerBuilder auth),
-     * 将{@link cc.saxfore.icbt.component.ICAuthenticationManager}从spring容器中移除
+     * 将{@link ICAuthenManager}从spring容器中移除
      * <p>
      * configure(AuthenticationManagerBuilder auth)等效,区别在于自定义切入时机不同
      * 自定义切入时机顺序：ICAuthenticationManager ---> AuthenticationProvider ---> UserDetailsService
@@ -123,8 +106,8 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
      * @param auth
      * @throws Exception
      */
-    // @Override
-    protected void configure_bak(AuthenticationManagerBuilder auth) throws Exception {
+    @Override
+    protected void configure(AuthenticationManagerBuilder auth) throws Exception {
         /**
          * 将用户写入内存中，相当于写死
          *
@@ -149,14 +132,15 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
         /**
          * 从数据库中加载
          */
-//        auth.userDetailsService(securityUserService).passwordEncoder(passwordEncoder);
+        auth.userDetailsService(securityUserService).passwordEncoder(passwordEncoder);
 
         /**
          * 获取认证的权限
          */
         Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
-        log.info("authentication class is {}", authentication.getClass());
-        log.info("authentication bean info {}", ICJsonUtil.toJsonString(authentication));
-
+        if (authentication != null) {
+            log.info("authentication class is {}", authentication.getClass());
+            log.info("authentication bean info {}", ICJsonUtil.toJsonString(authentication));
+        }
     }
 }

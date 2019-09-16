@@ -1,4 +1,4 @@
-package cc.saxfore.icbt.component;
+package cc.saxfore.icbt.security;
 
 import cc.saxfore.icbt.common.entity.IcRole;
 import cc.saxfore.icbt.common.entity.IcUser;
@@ -27,8 +27,8 @@ import java.util.List;
  * 创建时间：2019/9/16 3:05 PM
  * 创 建 人：wangjiang
  */
-@Component
-public class ICAuthenticationManager implements AuthenticationManager {
+//@Component
+public class ICAuthenManager implements AuthenticationManager {
     private final String secutiry_role_peffix = "ROLE_";
 
     @Autowired
