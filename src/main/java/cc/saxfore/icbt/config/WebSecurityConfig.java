@@ -35,14 +35,19 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
          * 权限控制
          */
         http.authorizeRequests()
-                // 需要admin角色才能访问
-                .antMatchers("/admin/**").hasRole("ADMIN")
-                // 至少需要user角色才能访问
-                .antMatchers("/user/**").hasAnyRole("USER", "ADMIN")
-                // 至少需要游客角色权限
-                .antMatchers("/**/*.html").hasAnyRole("GUEST", "USER", "ADMIN")
+
                 // 无需任何权限,也不需要登录就能访问
                 .antMatchers("/**/*.js", "/**/*.css", "/**/*.jpg", "/**/*.png").permitAll()
+
+                // 至少需要游客角色权限
+                .antMatchers("/**/*.html").hasAnyRole("GUEST", "USER", "ADMIN")
+
+                // 至少需要user角色才能访问
+                .antMatchers("/**/user/**").hasAnyRole("USER", "ADMIN")
+
+                // 需要admin角色才能访问
+                .antMatchers("/**/admin/**").hasRole("ADMIN")
+
                 // 除此之外,其他的资源全部需要登录,即使登录用户并未赋予任何角色
                 .anyRequest().authenticated();
 
