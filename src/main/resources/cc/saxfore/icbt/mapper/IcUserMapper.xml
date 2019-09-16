@@ -169,6 +169,20 @@
         where id = #{id,jdbcType=VARCHAR}
     </update>
 
+    <select id="findUserByUserName" parameterType="java.lang.String" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List"/>
+        from ic_user
+        where user_name = #{userName}
+    </select>
+
+    <select id="findUserByUserNameAndPassword" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List"/>
+        from ic_user
+        where user_name = #{userName} and user_pwd = #{password}
+    </select>
+
     <select id="listAll" resultMap="BaseResultMap">
         select
         <include refid="Base_Column_List"/>

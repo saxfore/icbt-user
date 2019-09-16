@@ -1,6 +1,7 @@
 package cc.saxfore.icbt.mapper;
 
 import cc.saxfore.icbt.common.entity.IcUser;
+import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
 
@@ -12,6 +13,7 @@ import java.util.List;
  * 创 建 人：wangjiang
  */
 public interface IcUserMapper {
+
     int deleteByPrimaryKey(String id);
 
     int insert(IcUser record);
@@ -23,6 +25,10 @@ public interface IcUserMapper {
     int updateByPrimaryKeySelective(IcUser record);
 
     int updateByPrimaryKey(IcUser record);
+
+    IcUser findUserByUserName(String userName);
+
+    IcUser findUserByUserNameAndPassword(@Param("userName") String userName, @Param("password") String password);
 
     List<IcUser> listAll();
 }

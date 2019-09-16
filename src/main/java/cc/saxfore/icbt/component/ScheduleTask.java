@@ -1,12 +1,11 @@
 package cc.saxfore.icbt.component;
 
 import cc.saxfore.icbt.common.entity.IcUser;
-import cc.saxfore.icbt.service.IUserService;
+import cc.saxfore.icbt.service.IcUserService;
 import com.google.gson.Gson;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
 
 import java.util.Date;
@@ -24,12 +23,12 @@ public class ScheduleTask {
     private static final Logger log = LoggerFactory.getLogger(ScheduleTask.class);
 
     @Autowired
-    IUserService userService;
+    IcUserService userService;
 
     /**
      * 每分钟执行一次
      */
-    @Scheduled(cron = "0 */1 * * * ?")
+    // @Scheduled(cron = "0 */1 * * * ?")
     public void listAllUsers() {
         log.info("ScheduleTask listAllUsers ...");
         long beginTime = new Date().getTime();

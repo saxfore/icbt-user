@@ -74,6 +74,9 @@ public class IcBaseEntity implements Serializable {
         if (ICStringUtil.isBlank(this.id)) {
             this.id = ICStringUtil.generalID();
         }
+        if (ICStringUtil.isBlank(delFlag)) {
+            this.delFlag = "1";
+        }
         if (ICStringUtil.isBlank(this.createUser)) {
             this.createUser = IConst.ENTITY_DEFAULT_OPERATOR;
         }

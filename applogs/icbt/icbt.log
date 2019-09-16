@@ -1,0 +1,999 @@
+2019-09-16 16:38:29,761 INFO [restartedMain] cc.saxfore.icbt.IcbtUserApplication [StartupInfoLogger.java : 50] Starting IcbtUserApplication on MacBook.local with PID 6682 (/Users/john/gitHub-workspace/icbt-user/target/classes started by john in /Users/john/gitHub-workspace/icbt-user)
+2019-09-16 16:38:29,765 INFO [restartedMain] cc.saxfore.icbt.IcbtUserApplication [SpringApplication.java : 646] No active profile set, falling back to default profiles: default
+2019-09-16 16:38:29,807 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java : 225] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-09-16 16:38:29,808 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java : 225] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-09-16 16:38:30,830 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java : 244] Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-09-16 16:38:30,833 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java : 126] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-09-16 16:38:30,883 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java : 182] Finished Spring Data repository scanning in 27ms. Found 0 repository interfaces.
+2019-09-16 16:38:31,367 INFO [restartedMain] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 330] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$4345b6b9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-16 16:38:31,983 INFO [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer [TomcatWebServer.java : 90] Tomcat initialized with port(s): 9001 (http)
+2019-09-16 16:38:31,997 INFO [restartedMain] o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java : 173] Initializing ProtocolHandler ["http-nio-9001"]
+2019-09-16 16:38:32,005 INFO [restartedMain] o.a.catalina.core.StandardService [DirectJDKLog.java : 173] Starting service [Tomcat]
+2019-09-16 16:38:32,005 INFO [restartedMain] o.a.catalina.core.StandardEngine [DirectJDKLog.java : 173] Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-09-16 16:38:32,086 INFO [restartedMain] o.a.c.c.C.[.[localhost].[/icbt] [DirectJDKLog.java : 173] Initializing Spring embedded WebApplicationContext
+2019-09-16 16:38:32,087 INFO [restartedMain] o.s.web.context.ContextLoader [ServletWebServerApplicationContext.java : 283] Root WebApplicationContext: initialization completed in 2279 ms
+2019-09-16 16:38:32,874 INFO [restartedMain] c.s.icbt.common.filter.IcbtFilter [IcbtFilter.java : 29] icbtFilter init ...
+2019-09-16 16:38:33,767 INFO [restartedMain] o.s.s.web.DefaultSecurityFilterChain [DefaultSecurityFilterChain.java : 43] Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4e82706d, org.springframework.security.web.context.SecurityContextPersistenceFilter@6a07aa8e, org.springframework.security.web.header.HeaderWriterFilter@351fba4c, org.springframework.security.web.csrf.CsrfFilter@1e37d057, org.springframework.security.web.authentication.logout.LogoutFilter@3f1530a1, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@25ecccda, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@1ab44548, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@1f807364, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@353fedd5, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@30e48704, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6cae0f91, org.springframework.security.web.session.SessionManagementFilter@54f46806, org.springframework.security.web.access.ExceptionTranslationFilter@802c29c, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@676d77eb]
+2019-09-16 16:38:34,141 INFO [restartedMain] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java : 171] Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-16 16:38:34,935 INFO [restartedMain] com.zaxxer.hikari.HikariDataSource [HikariDataSource.java : 110] DatebookHikariCP - Starting...
+2019-09-16 16:38:35,085 INFO [restartedMain] com.zaxxer.hikari.HikariDataSource [HikariDataSource.java : 123] DatebookHikariCP - Start completed.
+2019-09-16 16:38:35,132 INFO [restartedMain] org.quartz.impl.StdSchedulerFactory [StdSchedulerFactory.java : 1208] Using default implementation for ThreadExecutor
+2019-09-16 16:38:35,147 INFO [restartedMain] o.quartz.core.SchedulerSignalerImpl [SchedulerSignalerImpl.java : 61] Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2019-09-16 16:38:35,147 INFO [restartedMain] org.quartz.core.QuartzScheduler [QuartzScheduler.java : 229] Quartz Scheduler v.2.3.1 created.
+2019-09-16 16:38:35,148 INFO [restartedMain] org.quartz.simpl.RAMJobStore [RAMJobStore.java : 155] RAMJobStore initialized.
+2019-09-16 16:38:35,149 INFO [restartedMain] org.quartz.core.QuartzScheduler [QuartzScheduler.java : 294] Scheduler meta-data: Quartz Scheduler (v2.3.1) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2019-09-16 16:38:35,149 INFO [restartedMain] org.quartz.impl.StdSchedulerFactory [StdSchedulerFactory.java : 1362] Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2019-09-16 16:38:35,149 INFO [restartedMain] org.quartz.impl.StdSchedulerFactory [StdSchedulerFactory.java : 1366] Quartz scheduler version: 2.3.1
+2019-09-16 16:38:35,149 INFO [restartedMain] org.quartz.core.QuartzScheduler [QuartzScheduler.java : 2293] JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@d574ae7
+2019-09-16 16:38:35,183 INFO [restartedMain] o.s.b.a.e.web.EndpointLinksResolver [EndpointLinksResolver.java : 58] Exposing 15 endpoint(s) beneath base path '/actuator'
+2019-09-16 16:38:35,241 INFO [restartedMain] o.s.s.c.ThreadPoolTaskScheduler [ExecutorConfigurationSupport.java : 171] Initializing ExecutorService 'taskScheduler'
+2019-09-16 16:38:35,330 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java : 57] LiveReload server is running on port 35729
+2019-09-16 16:38:35,372 INFO [restartedMain] o.s.s.quartz.SchedulerFactoryBean [SchedulerFactoryBean.java : 726] Starting Quartz Scheduler now
+2019-09-16 16:38:35,373 INFO [restartedMain] org.quartz.core.QuartzScheduler [QuartzScheduler.java : 547] Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2019-09-16 16:38:35,391 INFO [restartedMain] o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java : 173] Starting ProtocolHandler ["http-nio-9001"]
+2019-09-16 16:38:35,433 INFO [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer [TomcatWebServer.java : 202] Tomcat started on port(s): 9001 (http) with context path '/icbt'
+2019-09-16 16:38:35,442 INFO [restartedMain] cc.saxfore.icbt.IcbtUserApplication [StartupInfoLogger.java : 59] Started IcbtUserApplication in 26.121 seconds (JVM running for 32.358)
+2019-09-16 16:38:36,174 INFO [RMI TCP Connection(3)-192.168.200.32] o.a.c.c.C.[.[localhost].[/icbt] [DirectJDKLog.java : 173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-09-16 16:38:36,176 INFO [RMI TCP Connection(3)-192.168.200.32] o.s.web.servlet.DispatcherServlet [FrameworkServlet.java : 524] Initializing Servlet 'dispatcherServlet'
+2019-09-16 16:38:36,193 INFO [RMI TCP Connection(3)-192.168.200.32] o.s.web.servlet.DispatcherServlet [FrameworkServlet.java : 546] Completed initialization in 17 ms
+2019-09-16 16:38:36,331 INFO [parallel-1] io.lettuce.core.EpollProvider [EpollProvider.java : 68] Starting without optional epoll library
+2019-09-16 16:38:36,332 INFO [parallel-1] io.lettuce.core.KqueueProvider [KqueueProvider.java : 70] Starting without optional kqueue library
+2019-09-16 16:40:10,580 ERROR [http-nio-9001-exec-7] o.a.c.c.C.[.[.[.[dispatcherServlet] [DirectJDKLog.java : 175] Servlet.service() for servlet [dispatcherServlet] in context with path [/icbt] threw exception
+java.lang.IllegalArgumentException: There is no PasswordEncoder mapped for the id "null"
+	at org.springframework.security.crypto.password.DelegatingPasswordEncoder$UnmappedIdPasswordEncoder.matches(DelegatingPasswordEncoder.java:244)
+	at org.springframework.security.crypto.password.DelegatingPasswordEncoder.matches(DelegatingPasswordEncoder.java:198)
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.additionalAuthenticationChecks(DaoAuthenticationProvider.java:90)
+	at org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider.authenticate(AbstractUserDetailsAuthenticationProvider.java:166)
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:175)
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:200)
+	at org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter.attemptAuthentication(UsernamePasswordAuthenticationFilter.java:94)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:212)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.csrf.CsrfFilter.doFilterInternal(CsrfFilter.java:124)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:109)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:74)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:109)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:109)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:357)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:270)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:109)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:109)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:109)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:114)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:104)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:109)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:109)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:853)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1587)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2019-09-16 16:40:49,548 ERROR [http-nio-9001-exec-10] o.a.c.c.C.[.[.[.[dispatcherServlet] [DirectJDKLog.java : 175] Servlet.service() for servlet [dispatcherServlet] in context with path [/icbt] threw exception
+java.lang.IllegalArgumentException: There is no PasswordEncoder mapped for the id "null"
+	at org.springframework.security.crypto.password.DelegatingPasswordEncoder$UnmappedIdPasswordEncoder.matches(DelegatingPasswordEncoder.java:244)
+	at org.springframework.security.crypto.password.DelegatingPasswordEncoder.matches(DelegatingPasswordEncoder.java:198)
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.additionalAuthenticationChecks(DaoAuthenticationProvider.java:90)
+	at org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider.authenticate(AbstractUserDetailsAuthenticationProvider.java:166)
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:175)
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:200)
+	at org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter.attemptAuthentication(UsernamePasswordAuthenticationFilter.java:94)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:212)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.csrf.CsrfFilter.doFilterInternal(CsrfFilter.java:124)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:109)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:74)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:109)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:109)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:357)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:270)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:109)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:109)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:109)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:114)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:104)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:109)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:109)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:853)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1587)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2019-09-16 16:41:43,384 ERROR [http-nio-9001-exec-3] o.a.c.c.C.[.[.[.[dispatcherServlet] [DirectJDKLog.java : 175] Servlet.service() for servlet [dispatcherServlet] in context with path [/icbt] threw exception
+java.lang.IllegalArgumentException: There is no PasswordEncoder mapped for the id "null"
+	at org.springframework.security.crypto.password.DelegatingPasswordEncoder$UnmappedIdPasswordEncoder.matches(DelegatingPasswordEncoder.java:244)
+	at org.springframework.security.crypto.password.DelegatingPasswordEncoder.matches(DelegatingPasswordEncoder.java:198)
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.additionalAuthenticationChecks(DaoAuthenticationProvider.java:90)
+	at org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider.authenticate(AbstractUserDetailsAuthenticationProvider.java:166)
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:175)
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:200)
+	at org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter.attemptAuthentication(UsernamePasswordAuthenticationFilter.java:94)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:212)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.csrf.CsrfFilter.doFilterInternal(CsrfFilter.java:124)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:109)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:74)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:109)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:109)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:357)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:270)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:109)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:109)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:109)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:114)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:104)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:109)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:109)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:853)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1587)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2019-09-16 16:42:21,341 INFO [Thread-61] org.quartz.core.QuartzScheduler [QuartzScheduler.java : 585] Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2019-09-16 16:42:21,347 INFO [Thread-61] o.s.s.c.ThreadPoolTaskScheduler [ExecutorConfigurationSupport.java : 208] Shutting down ExecutorService 'taskScheduler'
+2019-09-16 16:42:21,348 INFO [Thread-61] o.s.s.quartz.SchedulerFactoryBean [SchedulerFactoryBean.java : 844] Shutting down Quartz Scheduler
+2019-09-16 16:42:21,348 INFO [Thread-61] org.quartz.core.QuartzScheduler [QuartzScheduler.java : 666] Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2019-09-16 16:42:21,348 INFO [Thread-61] org.quartz.core.QuartzScheduler [QuartzScheduler.java : 585] Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2019-09-16 16:42:21,348 INFO [Thread-61] org.quartz.core.QuartzScheduler [QuartzScheduler.java : 740] Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2019-09-16 16:42:21,349 INFO [Thread-61] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java : 208] Shutting down ExecutorService 'applicationTaskExecutor'
+2019-09-16 16:44:26,433 INFO [restartedMain] cc.saxfore.icbt.IcbtUserApplication [StartupInfoLogger.java : 50] Starting IcbtUserApplication on MacBook.local with PID 6742 (/Users/john/gitHub-workspace/icbt-user/target/classes started by john in /Users/john/gitHub-workspace/icbt-user)
+2019-09-16 16:44:26,436 INFO [restartedMain] cc.saxfore.icbt.IcbtUserApplication [SpringApplication.java : 646] No active profile set, falling back to default profiles: default
+2019-09-16 16:44:26,468 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java : 225] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-09-16 16:44:26,468 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java : 225] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-09-16 16:44:27,290 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java : 244] Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-09-16 16:44:27,291 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java : 126] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-09-16 16:44:27,323 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java : 182] Finished Spring Data repository scanning in 19ms. Found 0 repository interfaces.
+2019-09-16 16:44:27,812 INFO [restartedMain] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 330] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c9ec7735] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-16 16:44:28,384 INFO [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer [TomcatWebServer.java : 90] Tomcat initialized with port(s): 9001 (http)
+2019-09-16 16:44:28,397 INFO [restartedMain] o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java : 173] Initializing ProtocolHandler ["http-nio-9001"]
+2019-09-16 16:44:28,404 INFO [restartedMain] o.a.catalina.core.StandardService [DirectJDKLog.java : 173] Starting service [Tomcat]
+2019-09-16 16:44:28,405 INFO [restartedMain] o.a.catalina.core.StandardEngine [DirectJDKLog.java : 173] Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-09-16 16:44:28,480 INFO [restartedMain] o.a.c.c.C.[.[localhost].[/icbt] [DirectJDKLog.java : 173] Initializing Spring embedded WebApplicationContext
+2019-09-16 16:44:28,481 INFO [restartedMain] o.s.web.context.ContextLoader [ServletWebServerApplicationContext.java : 283] Root WebApplicationContext: initialization completed in 2012 ms
+2019-09-16 16:44:29,221 INFO [restartedMain] c.s.icbt.common.filter.IcbtFilter [IcbtFilter.java : 29] icbtFilter init ...
+2019-09-16 16:44:29,992 INFO [restartedMain] o.s.s.web.DefaultSecurityFilterChain [DefaultSecurityFilterChain.java : 43] Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3081bace, org.springframework.security.web.context.SecurityContextPersistenceFilter@3f032639, org.springframework.security.web.header.HeaderWriterFilter@5e356b25, org.springframework.security.web.csrf.CsrfFilter@14e5f278, org.springframework.security.web.authentication.logout.LogoutFilter@596713a7, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@31cc6579, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@1d7967da, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@b1dae6b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1d843d48, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@174a8b78, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@50ba1d6, org.springframework.security.web.session.SessionManagementFilter@a532eea, org.springframework.security.web.access.ExceptionTranslationFilter@7fb9e564, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@697b895f]
+2019-09-16 16:44:30,259 INFO [restartedMain] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java : 171] Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-16 16:44:30,928 INFO [restartedMain] com.zaxxer.hikari.HikariDataSource [HikariDataSource.java : 110] DatebookHikariCP - Starting...
+2019-09-16 16:44:31,041 INFO [restartedMain] com.zaxxer.hikari.HikariDataSource [HikariDataSource.java : 123] DatebookHikariCP - Start completed.
+2019-09-16 16:44:31,077 INFO [restartedMain] org.quartz.impl.StdSchedulerFactory [StdSchedulerFactory.java : 1208] Using default implementation for ThreadExecutor
+2019-09-16 16:44:31,086 INFO [restartedMain] o.quartz.core.SchedulerSignalerImpl [SchedulerSignalerImpl.java : 61] Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2019-09-16 16:44:31,087 INFO [restartedMain] org.quartz.core.QuartzScheduler [QuartzScheduler.java : 229] Quartz Scheduler v.2.3.1 created.
+2019-09-16 16:44:31,087 INFO [restartedMain] org.quartz.simpl.RAMJobStore [RAMJobStore.java : 155] RAMJobStore initialized.
+2019-09-16 16:44:31,088 INFO [restartedMain] org.quartz.core.QuartzScheduler [QuartzScheduler.java : 294] Scheduler meta-data: Quartz Scheduler (v2.3.1) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2019-09-16 16:44:31,088 INFO [restartedMain] org.quartz.impl.StdSchedulerFactory [StdSchedulerFactory.java : 1362] Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2019-09-16 16:44:31,088 INFO [restartedMain] org.quartz.impl.StdSchedulerFactory [StdSchedulerFactory.java : 1366] Quartz scheduler version: 2.3.1
+2019-09-16 16:44:31,089 INFO [restartedMain] org.quartz.core.QuartzScheduler [QuartzScheduler.java : 2293] JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@1860eb6b
+2019-09-16 16:44:31,116 INFO [restartedMain] o.s.b.a.e.web.EndpointLinksResolver [EndpointLinksResolver.java : 58] Exposing 15 endpoint(s) beneath base path '/actuator'
+2019-09-16 16:44:31,176 INFO [restartedMain] o.s.s.c.ThreadPoolTaskScheduler [ExecutorConfigurationSupport.java : 171] Initializing ExecutorService 'taskScheduler'
+2019-09-16 16:44:31,301 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java : 57] LiveReload server is running on port 35729
+2019-09-16 16:44:31,344 INFO [restartedMain] o.s.s.quartz.SchedulerFactoryBean [SchedulerFactoryBean.java : 726] Starting Quartz Scheduler now
+2019-09-16 16:44:31,344 INFO [restartedMain] org.quartz.core.QuartzScheduler [QuartzScheduler.java : 547] Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2019-09-16 16:44:31,359 INFO [restartedMain] o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java : 173] Starting ProtocolHandler ["http-nio-9001"]
+2019-09-16 16:44:31,396 INFO [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer [TomcatWebServer.java : 202] Tomcat started on port(s): 9001 (http) with context path '/icbt'
+2019-09-16 16:44:31,406 INFO [restartedMain] cc.saxfore.icbt.IcbtUserApplication [StartupInfoLogger.java : 59] Started IcbtUserApplication in 25.334 seconds (JVM running for 31.066)
+2019-09-16 16:44:31,852 INFO [RMI TCP Connection(4)-192.168.200.32] o.a.c.c.C.[.[localhost].[/icbt] [DirectJDKLog.java : 173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-09-16 16:44:31,853 INFO [RMI TCP Connection(4)-192.168.200.32] o.s.web.servlet.DispatcherServlet [FrameworkServlet.java : 524] Initializing Servlet 'dispatcherServlet'
+2019-09-16 16:44:31,884 INFO [RMI TCP Connection(4)-192.168.200.32] o.s.web.servlet.DispatcherServlet [FrameworkServlet.java : 546] Completed initialization in 30 ms
+2019-09-16 16:44:32,119 INFO [parallel-1] io.lettuce.core.EpollProvider [EpollProvider.java : 68] Starting without optional epoll library
+2019-09-16 16:44:32,121 INFO [parallel-1] io.lettuce.core.KqueueProvider [KqueueProvider.java : 70] Starting without optional kqueue library
+2019-09-16 16:45:52,448 INFO [http-nio-9001-exec-2] c.s.icbt.config.WebSecurityConfig [WebSecurityConfig.java : 69] WebSecurityConfig 登录成功...
+2019-09-16 16:46:07,854 INFO [http-nio-9001-exec-4] c.s.icbt.common.filter.IcbtFilter [IcbtFilter.java : 34] icbtFilter doFilter ...
+2019-09-16 16:46:07,874 INFO [http-nio-9001-exec-4] c.s.icbt.common.filter.IcbtFilter [IcbtFilter.java : 43] ----请求地址:/icbt/index, 耗时:19ms
+2019-09-16 16:47:02,787 INFO [http-nio-9001-exec-6] c.s.icbt.common.filter.IcbtFilter [IcbtFilter.java : 34] icbtFilter doFilter ...
+2019-09-16 16:47:02,792 INFO [http-nio-9001-exec-6] c.s.i.c.interceptor.ApiInterceptor [ApiInterceptor.java : 30] ApiInterceptor preHandle ...
+2019-09-16 16:47:02,803 INFO [http-nio-9001-exec-6] c.s.icbt.common.aspect.IcbtAspect [IcbtAspect.java : 92] icbtAspect doAroundAdvice ...
+2019-09-16 16:47:02,805 INFO [http-nio-9001-exec-6] c.s.icbt.common.aspect.IcbtAspect [IcbtAspect.java : 96] icbtAspect doAroundAdvice 环绕通知的目标方法: cc.saxfore.icbt.controller.UserController.find
+2019-09-16 16:47:02,806 INFO [http-nio-9001-exec-6] c.s.icbt.common.aspect.IcbtAspect [IcbtAspect.java : 38] icbtAspect doBefore ...
+2019-09-16 16:47:02,806 INFO [http-nio-9001-exec-6] c.s.icbt.common.aspect.IcbtAspect [IcbtAspect.java : 44] icbtAspect doBefore 调用方法: cc.saxfore.icbt.controller.UserController.find
+2019-09-16 16:47:02,807 INFO [http-nio-9001-exec-6] c.s.icbt.common.aspect.IcbtAspect [IcbtAspect.java : 45] icbtAspect doBefore 请求参数: [1]
+2019-09-16 16:47:02,822 INFO [http-nio-9001-exec-6] c.s.icbt.common.aspect.IcbtAspect [IcbtAspect.java : 100] icbtAspect doAroundAdvice 环绕通知返回：{"code":200,"msg":"","data":{"userName":"saxfore","userPwd":"12345","userNick":"saxfore","phone":"13990018998","email":"13990018998@qq.com","userNo":"20190906001","id":"1","createUser":"admin","createTime":"Sep 9, 2019 4:34:30 PM","updateUser":"admin","updateTime":"Sep 9, 2019 4:34:30 PM"}}
+2019-09-16 16:47:02,823 INFO [http-nio-9001-exec-6] c.s.icbt.common.aspect.IcbtAspect [IcbtAspect.java : 56] icbtAspect doAfterReturning ...
+2019-09-16 16:47:02,824 INFO [http-nio-9001-exec-6] c.s.icbt.common.aspect.IcbtAspect [IcbtAspect.java : 63] icbtAspect doAfterReturning 调用方法: cc.saxfore.icbt.controller.UserController.find
+2019-09-16 16:47:02,824 INFO [http-nio-9001-exec-6] c.s.icbt.common.aspect.IcbtAspect [IcbtAspect.java : 64] icbtAspect doAfterReturning 返回结果: {"code":200,"msg":"","data":{"userName":"saxfore","userPwd":"12345","userNick":"saxfore","phone":"13990018998","email":"13990018998@qq.com","userNo":"20190906001","id":"1","createUser":"admin","createTime":"Sep 9, 2019 4:34:30 PM","updateUser":"admin","updateTime":"Sep 9, 2019 4:34:30 PM"}}
+2019-09-16 16:47:02,858 INFO [http-nio-9001-exec-6] c.s.i.c.interceptor.ApiInterceptor [ApiInterceptor.java : 51] ApiInterceptor postHandle ...
+2019-09-16 16:47:02,858 INFO [http-nio-9001-exec-6] c.s.i.c.interceptor.ApiInterceptor [ApiInterceptor.java : 57] ApiInterceptor afterCompletion ...
+2019-09-16 16:47:02,858 INFO [http-nio-9001-exec-6] c.s.icbt.common.filter.IcbtFilter [IcbtFilter.java : 43] ----请求地址:/icbt/api/user/find/1, 耗时:70ms
+2019-09-16 16:47:07,601 INFO [http-nio-9001-exec-7] c.s.icbt.common.filter.IcbtFilter [IcbtFilter.java : 34] icbtFilter doFilter ...
+2019-09-16 16:47:07,605 INFO [http-nio-9001-exec-7] c.s.i.c.interceptor.ApiInterceptor [ApiInterceptor.java : 30] ApiInterceptor preHandle ...
+2019-09-16 16:47:07,606 INFO [http-nio-9001-exec-7] c.s.icbt.common.aspect.IcbtAspect [IcbtAspect.java : 92] icbtAspect doAroundAdvice ...
+2019-09-16 16:47:07,606 INFO [http-nio-9001-exec-7] c.s.icbt.common.aspect.IcbtAspect [IcbtAspect.java : 96] icbtAspect doAroundAdvice 环绕通知的目标方法: cc.saxfore.icbt.controller.UserController.find
+2019-09-16 16:47:07,606 INFO [http-nio-9001-exec-7] c.s.icbt.common.aspect.IcbtAspect [IcbtAspect.java : 38] icbtAspect doBefore ...
+2019-09-16 16:47:07,607 INFO [http-nio-9001-exec-7] c.s.icbt.common.aspect.IcbtAspect [IcbtAspect.java : 44] icbtAspect doBefore 调用方法: cc.saxfore.icbt.controller.UserController.find
+2019-09-16 16:47:07,607 INFO [http-nio-9001-exec-7] c.s.icbt.common.aspect.IcbtAspect [IcbtAspect.java : 45] icbtAspect doBefore 请求参数: [2]
+2019-09-16 16:47:07,612 INFO [http-nio-9001-exec-7] c.s.icbt.common.aspect.IcbtAspect [IcbtAspect.java : 100] icbtAspect doAroundAdvice 环绕通知返回：{"code":200,"msg":"","data":{"userName":"eason","userPwd":"12345","userNick":"eason","phone":"13990018999","email":"13990018999@qq.com","userNo":"20190906002","id":"2","createUser":"admin","createTime":"Sep 9, 2019 4:38:00 PM","updateUser":"admin","updateTime":"Sep 9, 2019 4:38:00 PM"}}
+2019-09-16 16:47:07,613 INFO [http-nio-9001-exec-7] c.s.icbt.common.aspect.IcbtAspect [IcbtAspect.java : 56] icbtAspect doAfterReturning ...
+2019-09-16 16:47:07,614 INFO [http-nio-9001-exec-7] c.s.icbt.common.aspect.IcbtAspect [IcbtAspect.java : 63] icbtAspect doAfterReturning 调用方法: cc.saxfore.icbt.controller.UserController.find
+2019-09-16 16:47:07,614 INFO [http-nio-9001-exec-7] c.s.icbt.common.aspect.IcbtAspect [IcbtAspect.java : 64] icbtAspect doAfterReturning 返回结果: {"code":200,"msg":"","data":{"userName":"eason","userPwd":"12345","userNick":"eason","phone":"13990018999","email":"13990018999@qq.com","userNo":"20190906002","id":"2","createUser":"admin","createTime":"Sep 9, 2019 4:38:00 PM","updateUser":"admin","updateTime":"Sep 9, 2019 4:38:00 PM"}}
+2019-09-16 16:47:07,616 INFO [http-nio-9001-exec-7] c.s.i.c.interceptor.ApiInterceptor [ApiInterceptor.java : 51] ApiInterceptor postHandle ...
+2019-09-16 16:47:07,616 INFO [http-nio-9001-exec-7] c.s.i.c.interceptor.ApiInterceptor [ApiInterceptor.java : 57] ApiInterceptor afterCompletion ...
+2019-09-16 16:47:07,617 INFO [http-nio-9001-exec-7] c.s.icbt.common.filter.IcbtFilter [IcbtFilter.java : 43] ----请求地址:/icbt/api/user/find/2, 耗时:16ms
+2019-09-16 16:49:14,249 INFO [Thread-59] org.quartz.core.QuartzScheduler [QuartzScheduler.java : 585] Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2019-09-16 16:49:14,254 INFO [Thread-59] o.s.s.c.ThreadPoolTaskScheduler [ExecutorConfigurationSupport.java : 208] Shutting down ExecutorService 'taskScheduler'
+2019-09-16 16:49:14,254 INFO [Thread-59] o.s.s.quartz.SchedulerFactoryBean [SchedulerFactoryBean.java : 844] Shutting down Quartz Scheduler
+2019-09-16 16:49:14,255 INFO [Thread-59] org.quartz.core.QuartzScheduler [QuartzScheduler.java : 666] Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2019-09-16 16:49:14,255 INFO [Thread-59] org.quartz.core.QuartzScheduler [QuartzScheduler.java : 585] Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2019-09-16 16:49:14,255 INFO [Thread-59] org.quartz.core.QuartzScheduler [QuartzScheduler.java : 740] Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2019-09-16 16:49:14,257 INFO [Thread-59] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java : 208] Shutting down ExecutorService 'applicationTaskExecutor'
+2019-09-16 16:50:22,625 INFO [restartedMain] cc.saxfore.icbt.IcbtUserApplication [StartupInfoLogger.java : 50] Starting IcbtUserApplication on MacBook.local with PID 6796 (/Users/john/gitHub-workspace/icbt-user/target/classes started by john in /Users/john/gitHub-workspace/icbt-user)
+2019-09-16 16:50:22,629 INFO [restartedMain] cc.saxfore.icbt.IcbtUserApplication [SpringApplication.java : 646] No active profile set, falling back to default profiles: default
+2019-09-16 16:50:22,661 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java : 225] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-09-16 16:50:22,662 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java : 225] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-09-16 16:50:23,365 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java : 244] Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-09-16 16:50:23,367 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java : 126] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-09-16 16:50:23,390 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java : 182] Finished Spring Data repository scanning in 15ms. Found 0 repository interfaces.
+2019-09-16 16:50:23,790 INFO [restartedMain] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 330] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$cdc02b61] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-16 16:50:24,281 INFO [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer [TomcatWebServer.java : 90] Tomcat initialized with port(s): 9001 (http)
+2019-09-16 16:50:24,291 INFO [restartedMain] o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java : 173] Initializing ProtocolHandler ["http-nio-9001"]
+2019-09-16 16:50:24,297 INFO [restartedMain] o.a.catalina.core.StandardService [DirectJDKLog.java : 173] Starting service [Tomcat]
+2019-09-16 16:50:24,298 INFO [restartedMain] o.a.catalina.core.StandardEngine [DirectJDKLog.java : 173] Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-09-16 16:50:24,365 INFO [restartedMain] o.a.c.c.C.[.[localhost].[/icbt] [DirectJDKLog.java : 173] Initializing Spring embedded WebApplicationContext
+2019-09-16 16:50:24,365 INFO [restartedMain] o.s.web.context.ContextLoader [ServletWebServerApplicationContext.java : 283] Root WebApplicationContext: initialization completed in 1703 ms
+2019-09-16 16:50:24,994 INFO [restartedMain] c.s.icbt.common.filter.IcbtFilter [IcbtFilter.java : 29] icbtFilter init ...
+2019-09-16 16:50:25,683 INFO [restartedMain] o.s.s.web.DefaultSecurityFilterChain [DefaultSecurityFilterChain.java : 43] Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@644ebe1c, org.springframework.security.web.context.SecurityContextPersistenceFilter@3768ae4b, org.springframework.security.web.header.HeaderWriterFilter@67fd3545, org.springframework.security.web.csrf.CsrfFilter@c516227, org.springframework.security.web.authentication.logout.LogoutFilter@79aa9f68, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2cb54ea, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@686317ae, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@4a860981, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2e2a8095, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2cfbe89f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@41027271, org.springframework.security.web.session.SessionManagementFilter@3d3e5276, org.springframework.security.web.access.ExceptionTranslationFilter@4bbe8cb2, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1b3ba487]
+2019-09-16 16:50:25,932 INFO [restartedMain] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java : 171] Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-16 16:50:26,575 INFO [restartedMain] com.zaxxer.hikari.HikariDataSource [HikariDataSource.java : 110] DatebookHikariCP - Starting...
+2019-09-16 16:50:26,678 INFO [restartedMain] com.zaxxer.hikari.HikariDataSource [HikariDataSource.java : 123] DatebookHikariCP - Start completed.
+2019-09-16 16:50:26,711 INFO [restartedMain] org.quartz.impl.StdSchedulerFactory [StdSchedulerFactory.java : 1208] Using default implementation for ThreadExecutor
+2019-09-16 16:50:26,719 INFO [restartedMain] o.quartz.core.SchedulerSignalerImpl [SchedulerSignalerImpl.java : 61] Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2019-09-16 16:50:26,720 INFO [restartedMain] org.quartz.core.QuartzScheduler [QuartzScheduler.java : 229] Quartz Scheduler v.2.3.1 created.
+2019-09-16 16:50:26,720 INFO [restartedMain] org.quartz.simpl.RAMJobStore [RAMJobStore.java : 155] RAMJobStore initialized.
+2019-09-16 16:50:26,721 INFO [restartedMain] org.quartz.core.QuartzScheduler [QuartzScheduler.java : 294] Scheduler meta-data: Quartz Scheduler (v2.3.1) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2019-09-16 16:50:26,721 INFO [restartedMain] org.quartz.impl.StdSchedulerFactory [StdSchedulerFactory.java : 1362] Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2019-09-16 16:50:26,721 INFO [restartedMain] org.quartz.impl.StdSchedulerFactory [StdSchedulerFactory.java : 1366] Quartz scheduler version: 2.3.1
+2019-09-16 16:50:26,721 INFO [restartedMain] org.quartz.core.QuartzScheduler [QuartzScheduler.java : 2293] JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@6fb43aa8
+2019-09-16 16:50:26,747 INFO [restartedMain] o.s.b.a.e.web.EndpointLinksResolver [EndpointLinksResolver.java : 58] Exposing 15 endpoint(s) beneath base path '/actuator'
+2019-09-16 16:50:26,801 INFO [restartedMain] o.s.s.c.ThreadPoolTaskScheduler [ExecutorConfigurationSupport.java : 171] Initializing ExecutorService 'taskScheduler'
+2019-09-16 16:50:26,896 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java : 57] LiveReload server is running on port 35729
+2019-09-16 16:50:26,944 INFO [restartedMain] o.s.s.quartz.SchedulerFactoryBean [SchedulerFactoryBean.java : 726] Starting Quartz Scheduler now
+2019-09-16 16:50:26,945 INFO [restartedMain] org.quartz.core.QuartzScheduler [QuartzScheduler.java : 547] Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2019-09-16 16:50:26,962 INFO [restartedMain] o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java : 173] Starting ProtocolHandler ["http-nio-9001"]
+2019-09-16 16:50:26,996 INFO [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer [TomcatWebServer.java : 202] Tomcat started on port(s): 9001 (http) with context path '/icbt'
+2019-09-16 16:50:27,000 INFO [restartedMain] cc.saxfore.icbt.IcbtUserApplication [StartupInfoLogger.java : 59] Started IcbtUserApplication in 24.71 seconds (JVM running for 30.337)
+2019-09-16 16:50:27,523 INFO [RMI TCP Connection(4)-192.168.200.32] o.a.c.c.C.[.[localhost].[/icbt] [DirectJDKLog.java : 173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-09-16 16:50:27,523 INFO [RMI TCP Connection(4)-192.168.200.32] o.s.web.servlet.DispatcherServlet [FrameworkServlet.java : 524] Initializing Servlet 'dispatcherServlet'
+2019-09-16 16:50:27,552 INFO [RMI TCP Connection(4)-192.168.200.32] o.s.web.servlet.DispatcherServlet [FrameworkServlet.java : 546] Completed initialization in 29 ms
+2019-09-16 16:50:27,812 INFO [parallel-1] io.lettuce.core.EpollProvider [EpollProvider.java : 68] Starting without optional epoll library
+2019-09-16 16:50:27,815 INFO [parallel-1] io.lettuce.core.KqueueProvider [KqueueProvider.java : 70] Starting without optional kqueue library
+2019-09-16 16:57:24,414 INFO [http-nio-9001-exec-5] c.s.icbt.config.WebSecurityConfig [WebSecurityConfig.java : 81] WebSecurityConfig 登录失败：用户名或密码错误！
+2019-09-16 16:57:49,162 INFO [http-nio-9001-exec-1] c.s.icbt.config.WebSecurityConfig [WebSecurityConfig.java : 69] WebSecurityConfig 登录成功...
+2019-09-16 16:59:25,849 INFO [http-nio-9001-exec-1] c.s.icbt.config.WebSecurityConfig [WebSecurityConfig.java : 69] WebSecurityConfig 登录成功...
+2019-09-16 16:59:31,745 INFO [http-nio-9001-exec-2] c.s.icbt.common.filter.IcbtFilter [IcbtFilter.java : 34] icbtFilter doFilter ...
+2019-09-16 16:59:31,752 INFO [http-nio-9001-exec-2] c.s.icbt.common.aspect.IcbtAspect [IcbtAspect.java : 92] icbtAspect doAroundAdvice ...
+2019-09-16 16:59:31,753 INFO [http-nio-9001-exec-2] c.s.icbt.common.aspect.IcbtAspect [IcbtAspect.java : 96] icbtAspect doAroundAdvice 环绕通知的目标方法: cc.saxfore.icbt.controller.UserController.listAll
+2019-09-16 16:59:31,754 INFO [http-nio-9001-exec-2] c.s.icbt.common.aspect.IcbtAspect [IcbtAspect.java : 38] icbtAspect doBefore ...
+2019-09-16 16:59:31,755 INFO [http-nio-9001-exec-2] c.s.icbt.common.aspect.IcbtAspect [IcbtAspect.java : 44] icbtAspect doBefore 调用方法: cc.saxfore.icbt.controller.UserController.listAll
+2019-09-16 16:59:31,755 INFO [http-nio-9001-exec-2] c.s.icbt.common.aspect.IcbtAspect [IcbtAspect.java : 45] icbtAspect doBefore 请求参数: []
+2019-09-16 16:59:31,771 INFO [http-nio-9001-exec-2] c.s.icbt.common.aspect.IcbtAspect [IcbtAspect.java : 100] icbtAspect doAroundAdvice 环绕通知返回：{"code":200,"msg":"","data":[{"userName":"saxfore","userPwd":"12345","userNick":"saxfore","phone":"13990018998","email":"13990018998@qq.com","userNo":"20190906001","id":"1","createUser":"admin","createTime":"Sep 9, 2019 4:34:30 PM","updateUser":"admin","updateTime":"Sep 9, 2019 4:34:30 PM"},{"userName":"eason","userPwd":"12345","userNick":"eason","phone":"13990018999","email":"13990018999@qq.com","userNo":"20190906002","id":"2","createUser":"admin","createTime":"Sep 9, 2019 4:38:00 PM","updateUser":"admin","updateTime":"Sep 9, 2019 4:38:00 PM"}]}
+2019-09-16 16:59:31,772 INFO [http-nio-9001-exec-2] c.s.icbt.common.aspect.IcbtAspect [IcbtAspect.java : 56] icbtAspect doAfterReturning ...
+2019-09-16 16:59:31,773 INFO [http-nio-9001-exec-2] c.s.icbt.common.aspect.IcbtAspect [IcbtAspect.java : 63] icbtAspect doAfterReturning 调用方法: cc.saxfore.icbt.controller.UserController.listAll
+2019-09-16 16:59:31,773 INFO [http-nio-9001-exec-2] c.s.icbt.common.aspect.IcbtAspect [IcbtAspect.java : 64] icbtAspect doAfterReturning 返回结果: {"code":200,"msg":"","data":[{"userName":"saxfore","userPwd":"12345","userNick":"saxfore","phone":"13990018998","email":"13990018998@qq.com","userNo":"20190906001","id":"1","createUser":"admin","createTime":"Sep 9, 2019 4:34:30 PM","updateUser":"admin","updateTime":"Sep 9, 2019 4:34:30 PM"},{"userName":"eason","userPwd":"12345","userNick":"eason","phone":"13990018999","email":"13990018999@qq.com","userNo":"20190906002","id":"2","createUser":"admin","createTime":"Sep 9, 2019 4:38:00 PM","updateUser":"admin","updateTime":"Sep 9, 2019 4:38:00 PM"}]}
+2019-09-16 16:59:31,798 INFO [http-nio-9001-exec-2] c.s.icbt.common.filter.IcbtFilter [IcbtFilter.java : 43] ----请求地址:/icbt/user/listAll, 耗时:53ms
+2019-09-16 17:00:24,324 INFO [http-nio-9001-exec-4] c.s.icbt.common.filter.IcbtFilter [IcbtFilter.java : 34] icbtFilter doFilter ...
+2019-09-16 17:00:24,333 INFO [http-nio-9001-exec-4] c.s.icbt.common.aspect.IcbtAspect [IcbtAspect.java : 92] icbtAspect doAroundAdvice ...
+2019-09-16 17:00:24,333 INFO [http-nio-9001-exec-4] c.s.icbt.common.aspect.IcbtAspect [IcbtAspect.java : 96] icbtAspect doAroundAdvice 环绕通知的目标方法: cc.saxfore.icbt.controller.UserController.find
+2019-09-16 17:00:24,334 INFO [http-nio-9001-exec-4] c.s.icbt.common.aspect.IcbtAspect [IcbtAspect.java : 38] icbtAspect doBefore ...
+2019-09-16 17:00:24,334 INFO [http-nio-9001-exec-4] c.s.icbt.common.aspect.IcbtAspect [IcbtAspect.java : 44] icbtAspect doBefore 调用方法: cc.saxfore.icbt.controller.UserController.find
+2019-09-16 17:00:24,334 INFO [http-nio-9001-exec-4] c.s.icbt.common.aspect.IcbtAspect [IcbtAspect.java : 45] icbtAspect doBefore 请求参数: [1]
+2019-09-16 17:00:24,340 INFO [http-nio-9001-exec-4] c.s.icbt.common.aspect.IcbtAspect [IcbtAspect.java : 100] icbtAspect doAroundAdvice 环绕通知返回：{"code":200,"msg":"","data":{"userName":"saxfore","userPwd":"12345","userNick":"saxfore","phone":"13990018998","email":"13990018998@qq.com","userNo":"20190906001","id":"1","createUser":"admin","createTime":"Sep 9, 2019 4:34:30 PM","updateUser":"admin","updateTime":"Sep 9, 2019 4:34:30 PM"}}
+2019-09-16 17:00:24,340 INFO [http-nio-9001-exec-4] c.s.icbt.common.aspect.IcbtAspect [IcbtAspect.java : 56] icbtAspect doAfterReturning ...
+2019-09-16 17:00:24,341 INFO [http-nio-9001-exec-4] c.s.icbt.common.aspect.IcbtAspect [IcbtAspect.java : 63] icbtAspect doAfterReturning 调用方法: cc.saxfore.icbt.controller.UserController.find
+2019-09-16 17:00:24,341 INFO [http-nio-9001-exec-4] c.s.icbt.common.aspect.IcbtAspect [IcbtAspect.java : 64] icbtAspect doAfterReturning 返回结果: {"code":200,"msg":"","data":{"userName":"saxfore","userPwd":"12345","userNick":"saxfore","phone":"13990018998","email":"13990018998@qq.com","userNo":"20190906001","id":"1","createUser":"admin","createTime":"Sep 9, 2019 4:34:30 PM","updateUser":"admin","updateTime":"Sep 9, 2019 4:34:30 PM"}}
+2019-09-16 17:00:24,343 INFO [http-nio-9001-exec-4] c.s.icbt.common.filter.IcbtFilter [IcbtFilter.java : 43] ----请求地址:/icbt/user/find/1, 耗时:18ms
+2019-09-16 17:00:27,169 INFO [http-nio-9001-exec-5] c.s.icbt.common.filter.IcbtFilter [IcbtFilter.java : 34] icbtFilter doFilter ...
+2019-09-16 17:00:27,171 INFO [http-nio-9001-exec-5] c.s.icbt.common.aspect.IcbtAspect [IcbtAspect.java : 92] icbtAspect doAroundAdvice ...
+2019-09-16 17:00:27,172 INFO [http-nio-9001-exec-5] c.s.icbt.common.aspect.IcbtAspect [IcbtAspect.java : 96] icbtAspect doAroundAdvice 环绕通知的目标方法: cc.saxfore.icbt.controller.UserController.find
+2019-09-16 17:00:27,172 INFO [http-nio-9001-exec-5] c.s.icbt.common.aspect.IcbtAspect [IcbtAspect.java : 38] icbtAspect doBefore ...
+2019-09-16 17:00:27,172 INFO [http-nio-9001-exec-5] c.s.icbt.common.aspect.IcbtAspect [IcbtAspect.java : 44] icbtAspect doBefore 调用方法: cc.saxfore.icbt.controller.UserController.find
+2019-09-16 17:00:27,173 INFO [http-nio-9001-exec-5] c.s.icbt.common.aspect.IcbtAspect [IcbtAspect.java : 45] icbtAspect doBefore 请求参数: [2]
+2019-09-16 17:00:27,176 INFO [http-nio-9001-exec-5] c.s.icbt.common.aspect.IcbtAspect [IcbtAspect.java : 100] icbtAspect doAroundAdvice 环绕通知返回：{"code":200,"msg":"","data":{"userName":"eason","userPwd":"12345","userNick":"eason","phone":"13990018999","email":"13990018999@qq.com","userNo":"20190906002","id":"2","createUser":"admin","createTime":"Sep 9, 2019 4:38:00 PM","updateUser":"admin","updateTime":"Sep 9, 2019 4:38:00 PM"}}
+2019-09-16 17:00:27,177 INFO [http-nio-9001-exec-5] c.s.icbt.common.aspect.IcbtAspect [IcbtAspect.java : 56] icbtAspect doAfterReturning ...
+2019-09-16 17:00:27,177 INFO [http-nio-9001-exec-5] c.s.icbt.common.aspect.IcbtAspect [IcbtAspect.java : 63] icbtAspect doAfterReturning 调用方法: cc.saxfore.icbt.controller.UserController.find
+2019-09-16 17:00:27,178 INFO [http-nio-9001-exec-5] c.s.icbt.common.aspect.IcbtAspect [IcbtAspect.java : 64] icbtAspect doAfterReturning 返回结果: {"code":200,"msg":"","data":{"userName":"eason","userPwd":"12345","userNick":"eason","phone":"13990018999","email":"13990018999@qq.com","userNo":"20190906002","id":"2","createUser":"admin","createTime":"Sep 9, 2019 4:38:00 PM","updateUser":"admin","updateTime":"Sep 9, 2019 4:38:00 PM"}}
+2019-09-16 17:00:27,179 INFO [http-nio-9001-exec-5] c.s.icbt.common.filter.IcbtFilter [IcbtFilter.java : 43] ----请求地址:/icbt/user/find/2, 耗时:10ms
+2019-09-16 17:00:37,623 INFO [http-nio-9001-exec-8] c.s.icbt.config.WebSecurityConfig [WebSecurityConfig.java : 69] WebSecurityConfig 登录成功...
+2019-09-16 17:00:48,667 INFO [Thread-58] org.quartz.core.QuartzScheduler [QuartzScheduler.java : 585] Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2019-09-16 17:00:48,672 INFO [Thread-58] o.s.s.c.ThreadPoolTaskScheduler [ExecutorConfigurationSupport.java : 208] Shutting down ExecutorService 'taskScheduler'
+2019-09-16 17:00:48,673 INFO [Thread-58] o.s.s.quartz.SchedulerFactoryBean [SchedulerFactoryBean.java : 844] Shutting down Quartz Scheduler
+2019-09-16 17:00:48,673 INFO [Thread-58] org.quartz.core.QuartzScheduler [QuartzScheduler.java : 666] Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2019-09-16 17:00:48,673 INFO [Thread-58] org.quartz.core.QuartzScheduler [QuartzScheduler.java : 585] Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2019-09-16 17:00:48,673 INFO [Thread-58] org.quartz.core.QuartzScheduler [QuartzScheduler.java : 740] Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2019-09-16 17:00:48,675 INFO [Thread-58] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java : 208] Shutting down ExecutorService 'applicationTaskExecutor'
+2019-09-16 17:11:23,310 INFO [restartedMain] cc.saxfore.icbt.IcbtUserApplication [StartupInfoLogger.java : 50] Starting IcbtUserApplication on MacBook.local with PID 7464 (/Users/john/gitHub-workspace/icbt-user/target/classes started by john in /Users/john/gitHub-workspace/icbt-user)
+2019-09-16 17:11:23,313 INFO [restartedMain] cc.saxfore.icbt.IcbtUserApplication [SpringApplication.java : 646] No active profile set, falling back to default profiles: default
+2019-09-16 17:11:23,350 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java : 225] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-09-16 17:11:23,350 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java : 225] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-09-16 17:11:24,228 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java : 244] Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-09-16 17:11:24,230 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java : 126] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-09-16 17:11:24,275 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java : 182] Finished Spring Data repository scanning in 26ms. Found 0 repository interfaces.
+2019-09-16 17:11:24,686 INFO [restartedMain] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 330] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a63cec7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-16 17:11:25,185 INFO [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer [TomcatWebServer.java : 90] Tomcat initialized with port(s): 9001 (http)
+2019-09-16 17:11:25,196 INFO [restartedMain] o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java : 173] Initializing ProtocolHandler ["http-nio-9001"]
+2019-09-16 17:11:25,203 INFO [restartedMain] o.a.catalina.core.StandardService [DirectJDKLog.java : 173] Starting service [Tomcat]
+2019-09-16 17:11:25,203 INFO [restartedMain] o.a.catalina.core.StandardEngine [DirectJDKLog.java : 173] Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-09-16 17:11:25,272 INFO [restartedMain] o.a.c.c.C.[.[localhost].[/icbt] [DirectJDKLog.java : 173] Initializing Spring embedded WebApplicationContext
+2019-09-16 17:11:25,272 INFO [restartedMain] o.s.web.context.ContextLoader [ServletWebServerApplicationContext.java : 283] Root WebApplicationContext: initialization completed in 1922 ms
+2019-09-16 17:11:25,969 INFO [restartedMain] c.s.icbt.common.filter.IcbtFilter [IcbtFilter.java : 29] icbtFilter init ...
+2019-09-16 17:11:26,709 INFO [restartedMain] o.s.s.web.DefaultSecurityFilterChain [DefaultSecurityFilterChain.java : 43] Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@423db957, org.springframework.security.web.context.SecurityContextPersistenceFilter@7165768c, org.springframework.security.web.header.HeaderWriterFilter@1a670f2c, org.springframework.security.web.csrf.CsrfFilter@363f3d3, org.springframework.security.web.authentication.logout.LogoutFilter@7f0067d6, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@6304bdf5, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@55d4c919, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@43a54d70, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@445291e0, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@11d67923, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5662d0f3, org.springframework.security.web.session.SessionManagementFilter@2e9e520f, org.springframework.security.web.access.ExceptionTranslationFilter@1e76d3b0, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@cd64e91]
+2019-09-16 17:11:27,040 INFO [restartedMain] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java : 171] Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-16 17:11:27,717 INFO [restartedMain] com.zaxxer.hikari.HikariDataSource [HikariDataSource.java : 110] DatebookHikariCP - Starting...
+2019-09-16 17:11:27,861 INFO [restartedMain] com.zaxxer.hikari.HikariDataSource [HikariDataSource.java : 123] DatebookHikariCP - Start completed.
+2019-09-16 17:11:27,906 INFO [restartedMain] org.quartz.impl.StdSchedulerFactory [StdSchedulerFactory.java : 1208] Using default implementation for ThreadExecutor
+2019-09-16 17:11:27,919 INFO [restartedMain] o.quartz.core.SchedulerSignalerImpl [SchedulerSignalerImpl.java : 61] Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2019-09-16 17:11:27,919 INFO [restartedMain] org.quartz.core.QuartzScheduler [QuartzScheduler.java : 229] Quartz Scheduler v.2.3.1 created.
+2019-09-16 17:11:27,920 INFO [restartedMain] org.quartz.simpl.RAMJobStore [RAMJobStore.java : 155] RAMJobStore initialized.
+2019-09-16 17:11:27,920 INFO [restartedMain] org.quartz.core.QuartzScheduler [QuartzScheduler.java : 294] Scheduler meta-data: Quartz Scheduler (v2.3.1) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2019-09-16 17:11:27,921 INFO [restartedMain] org.quartz.impl.StdSchedulerFactory [StdSchedulerFactory.java : 1362] Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2019-09-16 17:11:27,921 INFO [restartedMain] org.quartz.impl.StdSchedulerFactory [StdSchedulerFactory.java : 1366] Quartz scheduler version: 2.3.1
+2019-09-16 17:11:27,921 INFO [restartedMain] org.quartz.core.QuartzScheduler [QuartzScheduler.java : 2293] JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@52201791
+2019-09-16 17:11:27,951 INFO [restartedMain] o.s.b.a.e.web.EndpointLinksResolver [EndpointLinksResolver.java : 58] Exposing 15 endpoint(s) beneath base path '/actuator'
+2019-09-16 17:11:28,017 INFO [restartedMain] o.s.s.c.ThreadPoolTaskScheduler [ExecutorConfigurationSupport.java : 171] Initializing ExecutorService 'taskScheduler'
+2019-09-16 17:11:28,123 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java : 57] LiveReload server is running on port 35729
+2019-09-16 17:11:28,173 INFO [restartedMain] o.s.s.quartz.SchedulerFactoryBean [SchedulerFactoryBean.java : 726] Starting Quartz Scheduler now
+2019-09-16 17:11:28,174 INFO [restartedMain] org.quartz.core.QuartzScheduler [QuartzScheduler.java : 547] Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2019-09-16 17:11:28,189 INFO [restartedMain] o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java : 173] Starting ProtocolHandler ["http-nio-9001"]
+2019-09-16 17:11:28,226 INFO [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer [TomcatWebServer.java : 202] Tomcat started on port(s): 9001 (http) with context path '/icbt'
+2019-09-16 17:11:28,229 INFO [restartedMain] cc.saxfore.icbt.IcbtUserApplication [StartupInfoLogger.java : 59] Started IcbtUserApplication in 25.297 seconds (JVM running for 30.996)
+2019-09-16 17:11:28,693 INFO [RMI TCP Connection(2)-192.168.200.32] o.a.c.c.C.[.[localhost].[/icbt] [DirectJDKLog.java : 173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-09-16 17:11:28,695 INFO [RMI TCP Connection(2)-192.168.200.32] o.s.web.servlet.DispatcherServlet [FrameworkServlet.java : 524] Initializing Servlet 'dispatcherServlet'
+2019-09-16 17:11:28,711 INFO [RMI TCP Connection(2)-192.168.200.32] o.s.web.servlet.DispatcherServlet [FrameworkServlet.java : 546] Completed initialization in 16 ms
+2019-09-16 17:11:28,820 INFO [parallel-1] io.lettuce.core.EpollProvider [EpollProvider.java : 68] Starting without optional epoll library
+2019-09-16 17:11:28,821 INFO [parallel-1] io.lettuce.core.KqueueProvider [KqueueProvider.java : 70] Starting without optional kqueue library
+2019-09-16 17:11:47,624 INFO [http-nio-9001-exec-3] c.s.icbt.config.WebSecurityConfig [WebSecurityConfig.java : 69] WebSecurityConfig 登录成功...
+2019-09-16 17:11:54,953 INFO [http-nio-9001-exec-5] c.s.icbt.common.filter.IcbtFilter [IcbtFilter.java : 34] icbtFilter doFilter ...
+2019-09-16 17:11:54,971 INFO [http-nio-9001-exec-5] c.s.icbt.common.filter.IcbtFilter [IcbtFilter.java : 43] ----请求地址:/icbt/index.html, 耗时:17ms
+2019-09-16 17:11:58,114 INFO [http-nio-9001-exec-6] c.s.icbt.common.filter.IcbtFilter [IcbtFilter.java : 34] icbtFilter doFilter ...
+2019-09-16 17:11:58,122 INFO [http-nio-9001-exec-6] c.s.icbt.common.aspect.IcbtAspect [IcbtAspect.java : 92] icbtAspect doAroundAdvice ...
+2019-09-16 17:11:58,124 INFO [http-nio-9001-exec-6] c.s.icbt.common.aspect.IcbtAspect [IcbtAspect.java : 96] icbtAspect doAroundAdvice 环绕通知的目标方法: cc.saxfore.icbt.controller.HomeController.find
+2019-09-16 17:11:58,124 INFO [http-nio-9001-exec-6] c.s.icbt.common.aspect.IcbtAspect [IcbtAspect.java : 38] icbtAspect doBefore ...
+2019-09-16 17:11:58,125 INFO [http-nio-9001-exec-6] c.s.icbt.common.aspect.IcbtAspect [IcbtAspect.java : 44] icbtAspect doBefore 调用方法: cc.saxfore.icbt.controller.HomeController.find
+2019-09-16 17:11:58,125 INFO [http-nio-9001-exec-6] c.s.icbt.common.aspect.IcbtAspect [IcbtAspect.java : 45] icbtAspect doBefore 请求参数: []
+2019-09-16 17:11:58,134 INFO [http-nio-9001-exec-6] c.s.icbt.common.aspect.IcbtAspect [IcbtAspect.java : 100] icbtAspect doAroundAdvice 环绕通知返回：{"code":200,"msg":"欢迎您：saxfore","data":""}
+2019-09-16 17:11:58,135 INFO [http-nio-9001-exec-6] c.s.icbt.common.aspect.IcbtAspect [IcbtAspect.java : 56] icbtAspect doAfterReturning ...
+2019-09-16 17:11:58,135 INFO [http-nio-9001-exec-6] c.s.icbt.common.aspect.IcbtAspect [IcbtAspect.java : 63] icbtAspect doAfterReturning 调用方法: cc.saxfore.icbt.controller.HomeController.find
+2019-09-16 17:11:58,136 INFO [http-nio-9001-exec-6] c.s.icbt.common.aspect.IcbtAspect [IcbtAspect.java : 64] icbtAspect doAfterReturning 返回结果: {"code":200,"msg":"欢迎您：saxfore","data":""}
+2019-09-16 17:11:58,159 INFO [http-nio-9001-exec-6] c.s.icbt.common.filter.IcbtFilter [IcbtFilter.java : 43] ----请求地址:/icbt/index, 耗时:45ms
+2019-09-16 17:12:08,269 INFO [http-nio-9001-exec-8] c.s.icbt.common.filter.IcbtFilter [IcbtFilter.java : 34] icbtFilter doFilter ...
+2019-09-16 17:12:08,272 INFO [http-nio-9001-exec-8] c.s.icbt.common.aspect.IcbtAspect [IcbtAspect.java : 92] icbtAspect doAroundAdvice ...
+2019-09-16 17:12:08,273 INFO [http-nio-9001-exec-8] c.s.icbt.common.aspect.IcbtAspect [IcbtAspect.java : 96] icbtAspect doAroundAdvice 环绕通知的目标方法: cc.saxfore.icbt.controller.HomeController.find
+2019-09-16 17:12:08,273 INFO [http-nio-9001-exec-8] c.s.icbt.common.aspect.IcbtAspect [IcbtAspect.java : 38] icbtAspect doBefore ...
+2019-09-16 17:12:08,273 INFO [http-nio-9001-exec-8] c.s.icbt.common.aspect.IcbtAspect [IcbtAspect.java : 44] icbtAspect doBefore 调用方法: cc.saxfore.icbt.controller.HomeController.find
+2019-09-16 17:12:08,273 INFO [http-nio-9001-exec-8] c.s.icbt.common.aspect.IcbtAspect [IcbtAspect.java : 45] icbtAspect doBefore 请求参数: []
+2019-09-16 17:12:08,274 INFO [http-nio-9001-exec-8] c.s.icbt.common.aspect.IcbtAspect [IcbtAspect.java : 100] icbtAspect doAroundAdvice 环绕通知返回：{"code":200,"msg":"欢迎您：saxfore","data":""}
+2019-09-16 17:12:08,275 INFO [http-nio-9001-exec-8] c.s.icbt.common.aspect.IcbtAspect [IcbtAspect.java : 56] icbtAspect doAfterReturning ...
+2019-09-16 17:12:08,275 INFO [http-nio-9001-exec-8] c.s.icbt.common.aspect.IcbtAspect [IcbtAspect.java : 63] icbtAspect doAfterReturning 调用方法: cc.saxfore.icbt.controller.HomeController.find
+2019-09-16 17:12:08,276 INFO [http-nio-9001-exec-8] c.s.icbt.common.aspect.IcbtAspect [IcbtAspect.java : 64] icbtAspect doAfterReturning 返回结果: {"code":200,"msg":"欢迎您：saxfore","data":""}
+2019-09-16 17:12:08,277 INFO [http-nio-9001-exec-8] c.s.icbt.common.filter.IcbtFilter [IcbtFilter.java : 43] ----请求地址:/icbt/home, 耗时:8ms
+2019-09-16 17:12:11,872 INFO [http-nio-9001-exec-9] c.s.icbt.common.filter.IcbtFilter [IcbtFilter.java : 34] icbtFilter doFilter ...
+2019-09-16 17:12:11,876 INFO [http-nio-9001-exec-9] c.s.icbt.common.filter.IcbtFilter [IcbtFilter.java : 43] ----请求地址:/icbt/, 耗时:3ms
+2019-09-16 17:12:18,345 INFO [http-nio-9001-exec-1] c.s.icbt.common.filter.IcbtFilter [IcbtFilter.java : 34] icbtFilter doFilter ...
+2019-09-16 17:12:18,349 INFO [http-nio-9001-exec-1] c.s.icbt.common.filter.IcbtFilter [IcbtFilter.java : 43] ----请求地址:/icbt/admin, 耗时:3ms
+2019-09-16 17:12:25,200 INFO [http-nio-9001-exec-2] c.s.icbt.common.filter.IcbtFilter [IcbtFilter.java : 34] icbtFilter doFilter ...
+2019-09-16 17:12:25,202 INFO [http-nio-9001-exec-2] c.s.icbt.common.aspect.IcbtAspect [IcbtAspect.java : 92] icbtAspect doAroundAdvice ...
+2019-09-16 17:12:25,203 INFO [http-nio-9001-exec-2] c.s.icbt.common.aspect.IcbtAspect [IcbtAspect.java : 96] icbtAspect doAroundAdvice 环绕通知的目标方法: cc.saxfore.icbt.controller.AdminController.listAll
+2019-09-16 17:12:25,203 INFO [http-nio-9001-exec-2] c.s.icbt.common.aspect.IcbtAspect [IcbtAspect.java : 38] icbtAspect doBefore ...
+2019-09-16 17:12:25,203 INFO [http-nio-9001-exec-2] c.s.icbt.common.aspect.IcbtAspect [IcbtAspect.java : 44] icbtAspect doBefore 调用方法: cc.saxfore.icbt.controller.AdminController.listAll
+2019-09-16 17:12:25,204 INFO [http-nio-9001-exec-2] c.s.icbt.common.aspect.IcbtAspect [IcbtAspect.java : 45] icbtAspect doBefore 请求参数: []
+2019-09-16 17:12:25,214 INFO [http-nio-9001-exec-2] c.s.icbt.common.aspect.IcbtAspect [IcbtAspect.java : 100] icbtAspect doAroundAdvice 环绕通知返回：{"code":200,"msg":"","data":[{"userName":"saxfore","userPwd":"12345","userNick":"saxfore","phone":"13990018998","email":"13990018998@qq.com","userNo":"20190906001","id":"1","createUser":"admin","createTime":"Sep 9, 2019 4:34:30 PM","updateUser":"admin","updateTime":"Sep 9, 2019 4:34:30 PM"},{"userName":"eason","userPwd":"12345","userNick":"eason","phone":"13990018999","email":"13990018999@qq.com","userNo":"20190906002","id":"2","createUser":"admin","createTime":"Sep 9, 2019 4:38:00 PM","updateUser":"admin","updateTime":"Sep 9, 2019 4:38:00 PM"},{"userName":"zhangsan","userPwd":"12345","userNick":"张三","phone":"13990018100","email":"13990018100@qq.com","userNo":"20190906003","id":"3","createUser":"admin","createTime":"Sep 9, 2019 4:38:00 PM","updateUser":"admin","updateTime":"Sep 9, 2019 4:38:00 PM"},{"userName":"lisi","userPwd":"12345","userNick":"lisi","phone":"13990018101","email":"13990018101@qq.com","userNo":"20190906004","id":"4","createUser":"admin","createTime":"Sep 9, 2019 4:38:00 PM","updateUser":"admin","updateTime":"Sep 9, 2019 4:38:00 PM"}]}
+2019-09-16 17:12:25,214 INFO [http-nio-9001-exec-2] c.s.icbt.common.aspect.IcbtAspect [IcbtAspect.java : 56] icbtAspect doAfterReturning ...
+2019-09-16 17:12:25,215 INFO [http-nio-9001-exec-2] c.s.icbt.common.aspect.IcbtAspect [IcbtAspect.java : 63] icbtAspect doAfterReturning 调用方法: cc.saxfore.icbt.controller.AdminController.listAll
+2019-09-16 17:12:25,216 INFO [http-nio-9001-exec-2] c.s.icbt.common.aspect.IcbtAspect [IcbtAspect.java : 64] icbtAspect doAfterReturning 返回结果: {"code":200,"msg":"","data":[{"userName":"saxfore","userPwd":"12345","userNick":"saxfore","phone":"13990018998","email":"13990018998@qq.com","userNo":"20190906001","id":"1","createUser":"admin","createTime":"Sep 9, 2019 4:34:30 PM","updateUser":"admin","updateTime":"Sep 9, 2019 4:34:30 PM"},{"userName":"eason","userPwd":"12345","userNick":"eason","phone":"13990018999","email":"13990018999@qq.com","userNo":"20190906002","id":"2","createUser":"admin","createTime":"Sep 9, 2019 4:38:00 PM","updateUser":"admin","updateTime":"Sep 9, 2019 4:38:00 PM"},{"userName":"zhangsan","userPwd":"12345","userNick":"张三","phone":"13990018100","email":"13990018100@qq.com","userNo":"20190906003","id":"3","createUser":"admin","createTime":"Sep 9, 2019 4:38:00 PM","updateUser":"admin","updateTime":"Sep 9, 2019 4:38:00 PM"},{"userName":"lisi","userPwd":"12345","userNick":"lisi","phone":"13990018101","email":"13990018101@qq.com","userNo":"20190906004","id":"4","createUser":"admin","createTime":"Sep 9, 2019 4:38:00 PM","updateUser":"admin","updateTime":"Sep 9, 2019 4:38:00 PM"}]}
+2019-09-16 17:12:25,220 INFO [http-nio-9001-exec-2] c.s.icbt.common.filter.IcbtFilter [IcbtFilter.java : 43] ----请求地址:/icbt/admin/listAll, 耗时:20ms
+2019-09-16 17:12:31,450 INFO [http-nio-9001-exec-4] c.s.icbt.common.filter.IcbtFilter [IcbtFilter.java : 34] icbtFilter doFilter ...
+2019-09-16 17:12:31,458 INFO [http-nio-9001-exec-4] c.s.icbt.common.aspect.IcbtAspect [IcbtAspect.java : 92] icbtAspect doAroundAdvice ...
+2019-09-16 17:12:31,458 INFO [http-nio-9001-exec-4] c.s.icbt.common.aspect.IcbtAspect [IcbtAspect.java : 96] icbtAspect doAroundAdvice 环绕通知的目标方法: cc.saxfore.icbt.controller.AdminController.find
+2019-09-16 17:12:31,458 INFO [http-nio-9001-exec-4] c.s.icbt.common.aspect.IcbtAspect [IcbtAspect.java : 38] icbtAspect doBefore ...
+2019-09-16 17:12:31,459 INFO [http-nio-9001-exec-4] c.s.icbt.common.aspect.IcbtAspect [IcbtAspect.java : 44] icbtAspect doBefore 调用方法: cc.saxfore.icbt.controller.AdminController.find
+2019-09-16 17:12:31,459 INFO [http-nio-9001-exec-4] c.s.icbt.common.aspect.IcbtAspect [IcbtAspect.java : 45] icbtAspect doBefore 请求参数: [3]
+2019-09-16 17:12:31,464 INFO [http-nio-9001-exec-4] c.s.icbt.common.aspect.IcbtAspect [IcbtAspect.java : 100] icbtAspect doAroundAdvice 环绕通知返回：{"code":200,"msg":"","data":{"userName":"zhangsan","userPwd":"12345","userNick":"张三","phone":"13990018100","email":"13990018100@qq.com","userNo":"20190906003","id":"3","createUser":"admin","createTime":"Sep 9, 2019 4:38:00 PM","updateUser":"admin","updateTime":"Sep 9, 2019 4:38:00 PM"}}
+2019-09-16 17:12:31,464 INFO [http-nio-9001-exec-4] c.s.icbt.common.aspect.IcbtAspect [IcbtAspect.java : 56] icbtAspect doAfterReturning ...
+2019-09-16 17:12:31,465 INFO [http-nio-9001-exec-4] c.s.icbt.common.aspect.IcbtAspect [IcbtAspect.java : 63] icbtAspect doAfterReturning 调用方法: cc.saxfore.icbt.controller.AdminController.find
+2019-09-16 17:12:31,465 INFO [http-nio-9001-exec-4] c.s.icbt.common.aspect.IcbtAspect [IcbtAspect.java : 64] icbtAspect doAfterReturning 返回结果: {"code":200,"msg":"","data":{"userName":"zhangsan","userPwd":"12345","userNick":"张三","phone":"13990018100","email":"13990018100@qq.com","userNo":"20190906003","id":"3","createUser":"admin","createTime":"Sep 9, 2019 4:38:00 PM","updateUser":"admin","updateTime":"Sep 9, 2019 4:38:00 PM"}}
+2019-09-16 17:12:31,467 INFO [http-nio-9001-exec-4] c.s.icbt.common.filter.IcbtFilter [IcbtFilter.java : 43] ----请求地址:/icbt/admin/find/3, 耗时:17ms
+2019-09-16 17:12:35,657 INFO [http-nio-9001-exec-5] c.s.icbt.common.filter.IcbtFilter [IcbtFilter.java : 34] icbtFilter doFilter ...
+2019-09-16 17:12:35,660 INFO [http-nio-9001-exec-5] c.s.icbt.common.aspect.IcbtAspect [IcbtAspect.java : 92] icbtAspect doAroundAdvice ...
+2019-09-16 17:12:35,660 INFO [http-nio-9001-exec-5] c.s.icbt.common.aspect.IcbtAspect [IcbtAspect.java : 96] icbtAspect doAroundAdvice 环绕通知的目标方法: cc.saxfore.icbt.controller.UserController.find
+2019-09-16 17:12:35,661 INFO [http-nio-9001-exec-5] c.s.icbt.common.aspect.IcbtAspect [IcbtAspect.java : 38] icbtAspect doBefore ...
+2019-09-16 17:12:35,661 INFO [http-nio-9001-exec-5] c.s.icbt.common.aspect.IcbtAspect [IcbtAspect.java : 44] icbtAspect doBefore 调用方法: cc.saxfore.icbt.controller.UserController.find
+2019-09-16 17:12:35,661 INFO [http-nio-9001-exec-5] c.s.icbt.common.aspect.IcbtAspect [IcbtAspect.java : 45] icbtAspect doBefore 请求参数: [3]
+2019-09-16 17:12:35,667 INFO [http-nio-9001-exec-5] c.s.icbt.common.aspect.IcbtAspect [IcbtAspect.java : 100] icbtAspect doAroundAdvice 环绕通知返回：{"code":200,"msg":"","data":{"userName":"zhangsan","userPwd":"12345","userNick":"张三","phone":"13990018100","email":"13990018100@qq.com","userNo":"20190906003","id":"3","createUser":"admin","createTime":"Sep 9, 2019 4:38:00 PM","updateUser":"admin","updateTime":"Sep 9, 2019 4:38:00 PM"}}
+2019-09-16 17:12:35,668 INFO [http-nio-9001-exec-5] c.s.icbt.common.aspect.IcbtAspect [IcbtAspect.java : 56] icbtAspect doAfterReturning ...
+2019-09-16 17:12:35,668 INFO [http-nio-9001-exec-5] c.s.icbt.common.aspect.IcbtAspect [IcbtAspect.java : 63] icbtAspect doAfterReturning 调用方法: cc.saxfore.icbt.controller.UserController.find
+2019-09-16 17:12:35,669 INFO [http-nio-9001-exec-5] c.s.icbt.common.aspect.IcbtAspect [IcbtAspect.java : 64] icbtAspect doAfterReturning 返回结果: {"code":200,"msg":"","data":{"userName":"zhangsan","userPwd":"12345","userNick":"张三","phone":"13990018100","email":"13990018100@qq.com","userNo":"20190906003","id":"3","createUser":"admin","createTime":"Sep 9, 2019 4:38:00 PM","updateUser":"admin","updateTime":"Sep 9, 2019 4:38:00 PM"}}
+2019-09-16 17:12:35,670 INFO [http-nio-9001-exec-5] c.s.icbt.common.filter.IcbtFilter [IcbtFilter.java : 43] ----请求地址:/icbt/user/find/3, 耗时:12ms
+2019-09-16 17:12:40,528 INFO [http-nio-9001-exec-6] c.s.icbt.common.filter.IcbtFilter [IcbtFilter.java : 34] icbtFilter doFilter ...
+2019-09-16 17:12:40,530 INFO [http-nio-9001-exec-6] c.s.icbt.common.aspect.IcbtAspect [IcbtAspect.java : 92] icbtAspect doAroundAdvice ...
+2019-09-16 17:12:40,530 INFO [http-nio-9001-exec-6] c.s.icbt.common.aspect.IcbtAspect [IcbtAspect.java : 96] icbtAspect doAroundAdvice 环绕通知的目标方法: cc.saxfore.icbt.controller.UserController.listAll
+2019-09-16 17:12:40,531 INFO [http-nio-9001-exec-6] c.s.icbt.common.aspect.IcbtAspect [IcbtAspect.java : 38] icbtAspect doBefore ...
+2019-09-16 17:12:40,531 INFO [http-nio-9001-exec-6] c.s.icbt.common.aspect.IcbtAspect [IcbtAspect.java : 44] icbtAspect doBefore 调用方法: cc.saxfore.icbt.controller.UserController.listAll
+2019-09-16 17:12:40,531 INFO [http-nio-9001-exec-6] c.s.icbt.common.aspect.IcbtAspect [IcbtAspect.java : 45] icbtAspect doBefore 请求参数: []
+2019-09-16 17:12:40,536 INFO [http-nio-9001-exec-6] c.s.icbt.common.aspect.IcbtAspect [IcbtAspect.java : 100] icbtAspect doAroundAdvice 环绕通知返回：{"code":200,"msg":"","data":[{"userName":"saxfore","userPwd":"12345","userNick":"saxfore","phone":"13990018998","email":"13990018998@qq.com","userNo":"20190906001","id":"1","createUser":"admin","createTime":"Sep 9, 2019 4:34:30 PM","updateUser":"admin","updateTime":"Sep 9, 2019 4:34:30 PM"},{"userName":"eason","userPwd":"12345","userNick":"eason","phone":"13990018999","email":"13990018999@qq.com","userNo":"20190906002","id":"2","createUser":"admin","createTime":"Sep 9, 2019 4:38:00 PM","updateUser":"admin","updateTime":"Sep 9, 2019 4:38:00 PM"},{"userName":"zhangsan","userPwd":"12345","userNick":"张三","phone":"13990018100","email":"13990018100@qq.com","userNo":"20190906003","id":"3","createUser":"admin","createTime":"Sep 9, 2019 4:38:00 PM","updateUser":"admin","updateTime":"Sep 9, 2019 4:38:00 PM"},{"userName":"lisi","userPwd":"12345","userNick":"lisi","phone":"13990018101","email":"13990018101@qq.com","userNo":"20190906004","id":"4","createUser":"admin","createTime":"Sep 9, 2019 4:38:00 PM","updateUser":"admin","updateTime":"Sep 9, 2019 4:38:00 PM"}]}
+2019-09-16 17:12:40,537 INFO [http-nio-9001-exec-6] c.s.icbt.common.aspect.IcbtAspect [IcbtAspect.java : 56] icbtAspect doAfterReturning ...
+2019-09-16 17:12:40,538 INFO [http-nio-9001-exec-6] c.s.icbt.common.aspect.IcbtAspect [IcbtAspect.java : 63] icbtAspect doAfterReturning 调用方法: cc.saxfore.icbt.controller.UserController.listAll
+2019-09-16 17:12:40,538 INFO [http-nio-9001-exec-6] c.s.icbt.common.aspect.IcbtAspect [IcbtAspect.java : 64] icbtAspect doAfterReturning 返回结果: {"code":200,"msg":"","data":[{"userName":"saxfore","userPwd":"12345","userNick":"saxfore","phone":"13990018998","email":"13990018998@qq.com","userNo":"20190906001","id":"1","createUser":"admin","createTime":"Sep 9, 2019 4:34:30 PM","updateUser":"admin","updateTime":"Sep 9, 2019 4:34:30 PM"},{"userName":"eason","userPwd":"12345","userNick":"eason","phone":"13990018999","email":"13990018999@qq.com","userNo":"20190906002","id":"2","createUser":"admin","createTime":"Sep 9, 2019 4:38:00 PM","updateUser":"admin","updateTime":"Sep 9, 2019 4:38:00 PM"},{"userName":"zhangsan","userPwd":"12345","userNick":"张三","phone":"13990018100","email":"13990018100@qq.com","userNo":"20190906003","id":"3","createUser":"admin","createTime":"Sep 9, 2019 4:38:00 PM","updateUser":"admin","updateTime":"Sep 9, 2019 4:38:00 PM"},{"userName":"lisi","userPwd":"12345","userNick":"lisi","phone":"13990018101","email":"13990018101@qq.com","userNo":"20190906004","id":"4","createUser":"admin","createTime":"Sep 9, 2019 4:38:00 PM","updateUser":"admin","updateTime":"Sep 9, 2019 4:38:00 PM"}]}
+2019-09-16 17:12:40,539 INFO [http-nio-9001-exec-6] c.s.icbt.common.filter.IcbtFilter [IcbtFilter.java : 43] ----请求地址:/icbt/user/listAll, 耗时:11ms
+2019-09-16 17:12:57,195 INFO [http-nio-9001-exec-9] c.s.icbt.config.WebSecurityConfig [WebSecurityConfig.java : 69] WebSecurityConfig 登录成功...
+2019-09-16 17:13:37,440 INFO [http-nio-9001-exec-4] c.s.icbt.common.filter.IcbtFilter [IcbtFilter.java : 34] icbtFilter doFilter ...
+2019-09-16 17:13:37,441 INFO [http-nio-9001-exec-4] c.s.icbt.common.aspect.IcbtAspect [IcbtAspect.java : 92] icbtAspect doAroundAdvice ...
+2019-09-16 17:13:37,442 INFO [http-nio-9001-exec-4] c.s.icbt.common.aspect.IcbtAspect [IcbtAspect.java : 96] icbtAspect doAroundAdvice 环绕通知的目标方法: cc.saxfore.icbt.controller.UserController.listAll
+2019-09-16 17:13:37,442 INFO [http-nio-9001-exec-4] c.s.icbt.common.aspect.IcbtAspect [IcbtAspect.java : 38] icbtAspect doBefore ...
+2019-09-16 17:13:37,443 INFO [http-nio-9001-exec-4] c.s.icbt.common.aspect.IcbtAspect [IcbtAspect.java : 44] icbtAspect doBefore 调用方法: cc.saxfore.icbt.controller.UserController.listAll
+2019-09-16 17:13:37,443 INFO [http-nio-9001-exec-4] c.s.icbt.common.aspect.IcbtAspect [IcbtAspect.java : 45] icbtAspect doBefore 请求参数: []
+2019-09-16 17:13:37,449 INFO [http-nio-9001-exec-4] c.s.icbt.common.aspect.IcbtAspect [IcbtAspect.java : 100] icbtAspect doAroundAdvice 环绕通知返回：{"code":200,"msg":"","data":[{"userName":"saxfore","userPwd":"12345","userNick":"saxfore","phone":"13990018998","email":"13990018998@qq.com","userNo":"20190906001","id":"1","createUser":"admin","createTime":"Sep 9, 2019 4:34:30 PM","updateUser":"admin","updateTime":"Sep 9, 2019 4:34:30 PM"},{"userName":"eason","userPwd":"12345","userNick":"eason","phone":"13990018999","email":"13990018999@qq.com","userNo":"20190906002","id":"2","createUser":"admin","createTime":"Sep 9, 2019 4:38:00 PM","updateUser":"admin","updateTime":"Sep 9, 2019 4:38:00 PM"},{"userName":"zhangsan","userPwd":"12345","userNick":"张三","phone":"13990018100","email":"13990018100@qq.com","userNo":"20190906003","id":"3","createUser":"admin","createTime":"Sep 9, 2019 4:38:00 PM","updateUser":"admin","updateTime":"Sep 9, 2019 4:38:00 PM"},{"userName":"lisi","userPwd":"12345","userNick":"lisi","phone":"13990018101","email":"13990018101@qq.com","userNo":"20190906004","id":"4","createUser":"admin","createTime":"Sep 9, 2019 4:38:00 PM","updateUser":"admin","updateTime":"Sep 9, 2019 4:38:00 PM"}]}
+2019-09-16 17:13:37,449 INFO [http-nio-9001-exec-4] c.s.icbt.common.aspect.IcbtAspect [IcbtAspect.java : 56] icbtAspect doAfterReturning ...
+2019-09-16 17:13:37,450 INFO [http-nio-9001-exec-4] c.s.icbt.common.aspect.IcbtAspect [IcbtAspect.java : 63] icbtAspect doAfterReturning 调用方法: cc.saxfore.icbt.controller.UserController.listAll
+2019-09-16 17:13:37,451 INFO [http-nio-9001-exec-4] c.s.icbt.common.aspect.IcbtAspect [IcbtAspect.java : 64] icbtAspect doAfterReturning 返回结果: {"code":200,"msg":"","data":[{"userName":"saxfore","userPwd":"12345","userNick":"saxfore","phone":"13990018998","email":"13990018998@qq.com","userNo":"20190906001","id":"1","createUser":"admin","createTime":"Sep 9, 2019 4:34:30 PM","updateUser":"admin","updateTime":"Sep 9, 2019 4:34:30 PM"},{"userName":"eason","userPwd":"12345","userNick":"eason","phone":"13990018999","email":"13990018999@qq.com","userNo":"20190906002","id":"2","createUser":"admin","createTime":"Sep 9, 2019 4:38:00 PM","updateUser":"admin","updateTime":"Sep 9, 2019 4:38:00 PM"},{"userName":"zhangsan","userPwd":"12345","userNick":"张三","phone":"13990018100","email":"13990018100@qq.com","userNo":"20190906003","id":"3","createUser":"admin","createTime":"Sep 9, 2019 4:38:00 PM","updateUser":"admin","updateTime":"Sep 9, 2019 4:38:00 PM"},{"userName":"lisi","userPwd":"12345","userNick":"lisi","phone":"13990018101","email":"13990018101@qq.com","userNo":"20190906004","id":"4","createUser":"admin","createTime":"Sep 9, 2019 4:38:00 PM","updateUser":"admin","updateTime":"Sep 9, 2019 4:38:00 PM"}]}
+2019-09-16 17:13:37,452 INFO [http-nio-9001-exec-4] c.s.icbt.common.filter.IcbtFilter [IcbtFilter.java : 43] ----请求地址:/icbt/user/listAll, 耗时:12ms
+2019-09-16 17:13:45,806 INFO [http-nio-9001-exec-6] c.s.icbt.common.filter.IcbtFilter [IcbtFilter.java : 34] icbtFilter doFilter ...
+2019-09-16 17:13:45,808 INFO [http-nio-9001-exec-6] c.s.icbt.common.aspect.IcbtAspect [IcbtAspect.java : 92] icbtAspect doAroundAdvice ...
+2019-09-16 17:13:45,809 INFO [http-nio-9001-exec-6] c.s.icbt.common.aspect.IcbtAspect [IcbtAspect.java : 96] icbtAspect doAroundAdvice 环绕通知的目标方法: cc.saxfore.icbt.controller.HomeController.find
+2019-09-16 17:13:45,809 INFO [http-nio-9001-exec-6] c.s.icbt.common.aspect.IcbtAspect [IcbtAspect.java : 38] icbtAspect doBefore ...
+2019-09-16 17:13:45,810 INFO [http-nio-9001-exec-6] c.s.icbt.common.aspect.IcbtAspect [IcbtAspect.java : 44] icbtAspect doBefore 调用方法: cc.saxfore.icbt.controller.HomeController.find
+2019-09-16 17:13:45,810 INFO [http-nio-9001-exec-6] c.s.icbt.common.aspect.IcbtAspect [IcbtAspect.java : 45] icbtAspect doBefore 请求参数: []
+2019-09-16 17:13:45,810 INFO [http-nio-9001-exec-6] c.s.icbt.common.aspect.IcbtAspect [IcbtAspect.java : 100] icbtAspect doAroundAdvice 环绕通知返回：{"code":200,"msg":"欢迎您：eason","data":""}
+2019-09-16 17:13:45,811 INFO [http-nio-9001-exec-6] c.s.icbt.common.aspect.IcbtAspect [IcbtAspect.java : 56] icbtAspect doAfterReturning ...
+2019-09-16 17:13:45,811 INFO [http-nio-9001-exec-6] c.s.icbt.common.aspect.IcbtAspect [IcbtAspect.java : 63] icbtAspect doAfterReturning 调用方法: cc.saxfore.icbt.controller.HomeController.find
+2019-09-16 17:13:45,811 INFO [http-nio-9001-exec-6] c.s.icbt.common.aspect.IcbtAspect [IcbtAspect.java : 64] icbtAspect doAfterReturning 返回结果: {"code":200,"msg":"欢迎您：eason","data":""}
+2019-09-16 17:13:45,812 INFO [http-nio-9001-exec-6] c.s.icbt.common.filter.IcbtFilter [IcbtFilter.java : 43] ----请求地址:/icbt/home, 耗时:5ms
+2019-09-16 17:16:40,632 INFO [Thread-59] org.quartz.core.QuartzScheduler [QuartzScheduler.java : 585] Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2019-09-16 17:16:40,637 INFO [Thread-59] o.s.s.c.ThreadPoolTaskScheduler [ExecutorConfigurationSupport.java : 208] Shutting down ExecutorService 'taskScheduler'
+2019-09-16 17:16:40,637 INFO [Thread-59] o.s.s.quartz.SchedulerFactoryBean [SchedulerFactoryBean.java : 844] Shutting down Quartz Scheduler
+2019-09-16 17:16:40,637 INFO [Thread-59] org.quartz.core.QuartzScheduler [QuartzScheduler.java : 666] Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2019-09-16 17:16:40,637 INFO [Thread-59] org.quartz.core.QuartzScheduler [QuartzScheduler.java : 585] Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2019-09-16 17:16:40,637 INFO [Thread-59] org.quartz.core.QuartzScheduler [QuartzScheduler.java : 740] Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2019-09-16 17:16:40,639 INFO [Thread-59] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java : 208] Shutting down ExecutorService 'applicationTaskExecutor'
+2019-09-16 17:23:16,958 INFO [restartedMain] cc.saxfore.icbt.IcbtUserApplication [StartupInfoLogger.java : 50] Starting IcbtUserApplication on MacBook.local with PID 7573 (/Users/john/gitHub-workspace/icbt-user/target/classes started by john in /Users/john/gitHub-workspace/icbt-user)
+2019-09-16 17:23:16,964 INFO [restartedMain] cc.saxfore.icbt.IcbtUserApplication [SpringApplication.java : 646] No active profile set, falling back to default profiles: default
+2019-09-16 17:23:16,998 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java : 225] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-09-16 17:23:16,998 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java : 225] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-09-16 17:23:17,854 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java : 244] Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-09-16 17:23:17,856 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java : 126] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-09-16 17:23:17,888 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java : 182] Finished Spring Data repository scanning in 20ms. Found 0 repository interfaces.
+2019-09-16 17:23:18,355 INFO [restartedMain] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 330] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$6419f0d7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-16 17:23:18,923 INFO [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer [TomcatWebServer.java : 90] Tomcat initialized with port(s): 9001 (http)
+2019-09-16 17:23:18,934 INFO [restartedMain] o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java : 173] Initializing ProtocolHandler ["http-nio-9001"]
+2019-09-16 17:23:18,941 INFO [restartedMain] o.a.catalina.core.StandardService [DirectJDKLog.java : 173] Starting service [Tomcat]
+2019-09-16 17:23:18,942 INFO [restartedMain] o.a.catalina.core.StandardEngine [DirectJDKLog.java : 173] Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-09-16 17:23:19,013 INFO [restartedMain] o.a.c.c.C.[.[localhost].[/icbt] [DirectJDKLog.java : 173] Initializing Spring embedded WebApplicationContext
+2019-09-16 17:23:19,014 INFO [restartedMain] o.s.web.context.ContextLoader [ServletWebServerApplicationContext.java : 283] Root WebApplicationContext: initialization completed in 2016 ms
+2019-09-16 17:23:19,768 INFO [restartedMain] c.s.icbt.common.filter.IcbtFilter [IcbtFilter.java : 29] icbtFilter init ...
+2019-09-16 17:23:20,570 INFO [restartedMain] o.s.s.web.DefaultSecurityFilterChain [DefaultSecurityFilterChain.java : 43] Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@79996a7d, org.springframework.security.web.context.SecurityContextPersistenceFilter@611298f4, org.springframework.security.web.header.HeaderWriterFilter@300293b3, org.springframework.security.web.csrf.CsrfFilter@21b1ee03, org.springframework.security.web.authentication.logout.LogoutFilter@e8fc567, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@69244adb, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@2a4b2769, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@7c23807f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@70a464cd, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@28bdf73e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@23161353, org.springframework.security.web.session.SessionManagementFilter@6590ac1c, org.springframework.security.web.access.ExceptionTranslationFilter@79041a99, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@343334b4]
+2019-09-16 17:23:20,865 INFO [restartedMain] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java : 171] Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-16 17:23:21,573 INFO [restartedMain] com.zaxxer.hikari.HikariDataSource [HikariDataSource.java : 110] DatebookHikariCP - Starting...
+2019-09-16 17:23:21,693 INFO [restartedMain] com.zaxxer.hikari.HikariDataSource [HikariDataSource.java : 123] DatebookHikariCP - Start completed.
+2019-09-16 17:23:21,732 INFO [restartedMain] org.quartz.impl.StdSchedulerFactory [StdSchedulerFactory.java : 1208] Using default implementation for ThreadExecutor
+2019-09-16 17:23:21,741 INFO [restartedMain] o.quartz.core.SchedulerSignalerImpl [SchedulerSignalerImpl.java : 61] Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2019-09-16 17:23:21,741 INFO [restartedMain] org.quartz.core.QuartzScheduler [QuartzScheduler.java : 229] Quartz Scheduler v.2.3.1 created.
+2019-09-16 17:23:21,742 INFO [restartedMain] org.quartz.simpl.RAMJobStore [RAMJobStore.java : 155] RAMJobStore initialized.
+2019-09-16 17:23:21,742 INFO [restartedMain] org.quartz.core.QuartzScheduler [QuartzScheduler.java : 294] Scheduler meta-data: Quartz Scheduler (v2.3.1) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2019-09-16 17:23:21,743 INFO [restartedMain] org.quartz.impl.StdSchedulerFactory [StdSchedulerFactory.java : 1362] Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2019-09-16 17:23:21,743 INFO [restartedMain] org.quartz.impl.StdSchedulerFactory [StdSchedulerFactory.java : 1366] Quartz scheduler version: 2.3.1
+2019-09-16 17:23:21,743 INFO [restartedMain] org.quartz.core.QuartzScheduler [QuartzScheduler.java : 2293] JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@5ea38fab
+2019-09-16 17:23:21,771 INFO [restartedMain] o.s.b.a.e.web.EndpointLinksResolver [EndpointLinksResolver.java : 58] Exposing 15 endpoint(s) beneath base path '/actuator'
+2019-09-16 17:23:21,831 INFO [restartedMain] o.s.s.c.ThreadPoolTaskScheduler [ExecutorConfigurationSupport.java : 171] Initializing ExecutorService 'taskScheduler'
+2019-09-16 17:23:21,924 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java : 57] LiveReload server is running on port 35729
+2019-09-16 17:23:21,964 INFO [restartedMain] o.s.s.quartz.SchedulerFactoryBean [SchedulerFactoryBean.java : 726] Starting Quartz Scheduler now
+2019-09-16 17:23:21,964 INFO [restartedMain] org.quartz.core.QuartzScheduler [QuartzScheduler.java : 547] Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2019-09-16 17:23:21,982 INFO [restartedMain] o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java : 173] Starting ProtocolHandler ["http-nio-9001"]
+2019-09-16 17:23:22,024 INFO [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer [TomcatWebServer.java : 202] Tomcat started on port(s): 9001 (http) with context path '/icbt'
+2019-09-16 17:23:22,030 INFO [restartedMain] cc.saxfore.icbt.IcbtUserApplication [StartupInfoLogger.java : 59] Started IcbtUserApplication in 25.402 seconds (JVM running for 30.985)
+2019-09-16 17:23:22,369 INFO [RMI TCP Connection(3)-192.168.200.32] o.a.c.c.C.[.[localhost].[/icbt] [DirectJDKLog.java : 173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-09-16 17:23:22,370 INFO [RMI TCP Connection(3)-192.168.200.32] o.s.web.servlet.DispatcherServlet [FrameworkServlet.java : 524] Initializing Servlet 'dispatcherServlet'
+2019-09-16 17:23:22,386 INFO [RMI TCP Connection(3)-192.168.200.32] o.s.web.servlet.DispatcherServlet [FrameworkServlet.java : 546] Completed initialization in 16 ms
+2019-09-16 17:23:22,502 INFO [parallel-1] io.lettuce.core.EpollProvider [EpollProvider.java : 68] Starting without optional epoll library
+2019-09-16 17:23:22,503 INFO [parallel-1] io.lettuce.core.KqueueProvider [KqueueProvider.java : 70] Starting without optional kqueue library
+2019-09-16 17:24:15,633 ERROR [http-nio-9001-exec-4] o.a.c.c.C.[.[.[.[dispatcherServlet] [DirectJDKLog.java : 175] Servlet.service() for servlet [dispatcherServlet] in context with path [/icbt] threw exception
+java.lang.IllegalArgumentException: There is no PasswordEncoder mapped for the id "null"
+	at org.springframework.security.crypto.password.DelegatingPasswordEncoder$UnmappedIdPasswordEncoder.matches(DelegatingPasswordEncoder.java:244)
+	at org.springframework.security.crypto.password.DelegatingPasswordEncoder.matches(DelegatingPasswordEncoder.java:198)
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.additionalAuthenticationChecks(DaoAuthenticationProvider.java:90)
+	at org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider.authenticate(AbstractUserDetailsAuthenticationProvider.java:166)
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:175)
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:200)
+	at org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter.attemptAuthentication(UsernamePasswordAuthenticationFilter.java:94)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:212)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.csrf.CsrfFilter.doFilterInternal(CsrfFilter.java:124)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:109)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:74)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:109)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:109)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:357)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:270)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:109)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:109)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:109)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:114)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:104)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:109)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:109)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:853)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1587)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2019-09-16 17:24:26,865 INFO [Thread-59] org.quartz.core.QuartzScheduler [QuartzScheduler.java : 585] Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2019-09-16 17:24:26,869 INFO [Thread-59] o.s.s.c.ThreadPoolTaskScheduler [ExecutorConfigurationSupport.java : 208] Shutting down ExecutorService 'taskScheduler'
+2019-09-16 17:24:26,870 INFO [Thread-59] o.s.s.quartz.SchedulerFactoryBean [SchedulerFactoryBean.java : 844] Shutting down Quartz Scheduler
+2019-09-16 17:24:26,870 INFO [Thread-59] org.quartz.core.QuartzScheduler [QuartzScheduler.java : 666] Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2019-09-16 17:24:26,870 INFO [Thread-59] org.quartz.core.QuartzScheduler [QuartzScheduler.java : 585] Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2019-09-16 17:24:26,870 INFO [Thread-59] org.quartz.core.QuartzScheduler [QuartzScheduler.java : 740] Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2019-09-16 17:24:26,872 INFO [Thread-59] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java : 208] Shutting down ExecutorService 'applicationTaskExecutor'
+2019-09-16 17:25:43,366 INFO [restartedMain] cc.saxfore.icbt.IcbtUserApplication [StartupInfoLogger.java : 50] Starting IcbtUserApplication on MacBook.local with PID 7629 (/Users/john/gitHub-workspace/icbt-user/target/classes started by john in /Users/john/gitHub-workspace/icbt-user)
+2019-09-16 17:25:43,370 INFO [restartedMain] cc.saxfore.icbt.IcbtUserApplication [SpringApplication.java : 646] No active profile set, falling back to default profiles: default
+2019-09-16 17:25:43,403 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java : 225] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-09-16 17:25:43,404 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java : 225] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-09-16 17:25:44,266 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java : 244] Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-09-16 17:25:44,268 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java : 126] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-09-16 17:25:44,307 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java : 182] Finished Spring Data repository scanning in 24ms. Found 0 repository interfaces.
+2019-09-16 17:25:44,764 INFO [restartedMain] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 330] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ecc184b4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-16 17:25:45,324 INFO [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer [TomcatWebServer.java : 90] Tomcat initialized with port(s): 9001 (http)
+2019-09-16 17:25:45,336 INFO [restartedMain] o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java : 173] Initializing ProtocolHandler ["http-nio-9001"]
+2019-09-16 17:25:45,343 INFO [restartedMain] o.a.catalina.core.StandardService [DirectJDKLog.java : 173] Starting service [Tomcat]
+2019-09-16 17:25:45,343 INFO [restartedMain] o.a.catalina.core.StandardEngine [DirectJDKLog.java : 173] Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-09-16 17:25:45,417 INFO [restartedMain] o.a.c.c.C.[.[localhost].[/icbt] [DirectJDKLog.java : 173] Initializing Spring embedded WebApplicationContext
+2019-09-16 17:25:45,417 INFO [restartedMain] o.s.web.context.ContextLoader [ServletWebServerApplicationContext.java : 283] Root WebApplicationContext: initialization completed in 2013 ms
+2019-09-16 17:25:46,129 INFO [restartedMain] c.s.icbt.common.filter.IcbtFilter [IcbtFilter.java : 29] icbtFilter init ...
+2019-09-16 17:25:46,907 INFO [restartedMain] o.s.s.web.DefaultSecurityFilterChain [DefaultSecurityFilterChain.java : 43] Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@42475efb, org.springframework.security.web.context.SecurityContextPersistenceFilter@5205186a, org.springframework.security.web.header.HeaderWriterFilter@1c2f5b7f, org.springframework.security.web.csrf.CsrfFilter@5545aaac, org.springframework.security.web.authentication.logout.LogoutFilter@48c5a04, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@31b15140, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@7d6a35, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@31ff2615, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@d34402c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5ca4fc53, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3b2abdc9, org.springframework.security.web.session.SessionManagementFilter@730b4f84, org.springframework.security.web.access.ExceptionTranslationFilter@337227f8, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5bba0908]
+2019-09-16 17:25:47,248 INFO [restartedMain] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java : 171] Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-16 17:25:47,914 INFO [restartedMain] com.zaxxer.hikari.HikariDataSource [HikariDataSource.java : 110] DatebookHikariCP - Starting...
+2019-09-16 17:25:48,012 INFO [restartedMain] com.zaxxer.hikari.HikariDataSource [HikariDataSource.java : 123] DatebookHikariCP - Start completed.
+2019-09-16 17:25:48,045 INFO [restartedMain] org.quartz.impl.StdSchedulerFactory [StdSchedulerFactory.java : 1208] Using default implementation for ThreadExecutor
+2019-09-16 17:25:48,054 INFO [restartedMain] o.quartz.core.SchedulerSignalerImpl [SchedulerSignalerImpl.java : 61] Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2019-09-16 17:25:48,054 INFO [restartedMain] org.quartz.core.QuartzScheduler [QuartzScheduler.java : 229] Quartz Scheduler v.2.3.1 created.
+2019-09-16 17:25:48,055 INFO [restartedMain] org.quartz.simpl.RAMJobStore [RAMJobStore.java : 155] RAMJobStore initialized.
+2019-09-16 17:25:48,056 INFO [restartedMain] org.quartz.core.QuartzScheduler [QuartzScheduler.java : 294] Scheduler meta-data: Quartz Scheduler (v2.3.1) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2019-09-16 17:25:48,056 INFO [restartedMain] org.quartz.impl.StdSchedulerFactory [StdSchedulerFactory.java : 1362] Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2019-09-16 17:25:48,056 INFO [restartedMain] org.quartz.impl.StdSchedulerFactory [StdSchedulerFactory.java : 1366] Quartz scheduler version: 2.3.1
+2019-09-16 17:25:48,056 INFO [restartedMain] org.quartz.core.QuartzScheduler [QuartzScheduler.java : 2293] JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@6908d2af
+2019-09-16 17:25:48,083 INFO [restartedMain] o.s.b.a.e.web.EndpointLinksResolver [EndpointLinksResolver.java : 58] Exposing 15 endpoint(s) beneath base path '/actuator'
+2019-09-16 17:25:48,132 INFO [restartedMain] o.s.s.c.ThreadPoolTaskScheduler [ExecutorConfigurationSupport.java : 171] Initializing ExecutorService 'taskScheduler'
+2019-09-16 17:25:48,245 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java : 57] LiveReload server is running on port 35729
+2019-09-16 17:25:48,301 INFO [restartedMain] o.s.s.quartz.SchedulerFactoryBean [SchedulerFactoryBean.java : 726] Starting Quartz Scheduler now
+2019-09-16 17:25:48,302 INFO [restartedMain] org.quartz.core.QuartzScheduler [QuartzScheduler.java : 547] Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2019-09-16 17:25:48,319 INFO [restartedMain] o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java : 173] Starting ProtocolHandler ["http-nio-9001"]
+2019-09-16 17:25:48,363 INFO [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer [TomcatWebServer.java : 202] Tomcat started on port(s): 9001 (http) with context path '/icbt'
+2019-09-16 17:25:48,367 INFO [restartedMain] cc.saxfore.icbt.IcbtUserApplication [StartupInfoLogger.java : 59] Started IcbtUserApplication in 25.371 seconds (JVM running for 31.065)
+2019-09-16 17:25:49,128 INFO [RMI TCP Connection(2)-192.168.200.32] o.a.c.c.C.[.[localhost].[/icbt] [DirectJDKLog.java : 173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-09-16 17:25:49,130 INFO [RMI TCP Connection(2)-192.168.200.32] o.s.web.servlet.DispatcherServlet [FrameworkServlet.java : 524] Initializing Servlet 'dispatcherServlet'
+2019-09-16 17:25:49,147 INFO [RMI TCP Connection(2)-192.168.200.32] o.s.web.servlet.DispatcherServlet [FrameworkServlet.java : 546] Completed initialization in 17 ms
+2019-09-16 17:25:49,364 INFO [parallel-1] io.lettuce.core.EpollProvider [EpollProvider.java : 68] Starting without optional epoll library
+2019-09-16 17:25:49,366 INFO [parallel-1] io.lettuce.core.KqueueProvider [KqueueProvider.java : 70] Starting without optional kqueue library
+2019-09-16 17:27:56,947 ERROR [http-nio-9001-exec-2] o.a.c.c.C.[.[.[.[dispatcherServlet] [DirectJDKLog.java : 175] Servlet.service() for servlet [dispatcherServlet] in context with path [/icbt] threw exception
+org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.binding.BindingException: Parameter 'userName' not found. Available parameters are [arg1, arg0, param1, param2]
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:78)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:440)
+	at com.sun.proxy.$Proxy105.selectOne(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectOne(SqlSessionTemplate.java:159)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:87)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:57)
+	at com.sun.proxy.$Proxy106.findUserByUserNameAndPassword(Unknown Source)
+	at cc.saxfore.icbt.service.impl.IcUserServiceImpl.findUserByUserNameAndPassword(IcUserServiceImpl.java:72)
+	at cc.saxfore.icbt.component.ICAuthenticationManager.authenticate(ICAuthenticationManager.java:50)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:343)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:205)
+	at com.sun.proxy.$Proxy120.authenticate(Unknown Source)
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:200)
+	at org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter.attemptAuthentication(UsernamePasswordAuthenticationFilter.java:94)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:212)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.csrf.CsrfFilter.doFilterInternal(CsrfFilter.java:124)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:109)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:74)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:109)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:109)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:357)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:270)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:109)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:109)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:109)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:114)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:104)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:109)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:109)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:853)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1587)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.ibatis.binding.BindingException: Parameter 'userName' not found. Available parameters are [arg1, arg0, param1, param2]
+	at org.apache.ibatis.binding.MapperMethod$ParamMap.get(MapperMethod.java:212)
+	at org.apache.ibatis.reflection.wrapper.MapWrapper.get(MapWrapper.java:45)
+	at org.apache.ibatis.reflection.MetaObject.getValue(MetaObject.java:122)
+	at org.apache.ibatis.executor.BaseExecutor.createCacheKey(BaseExecutor.java:219)
+	at org.apache.ibatis.executor.CachingExecutor.createCacheKey(CachingExecutor.java:146)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:82)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:140)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectOne(DefaultSqlSession.java:76)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:426)
+	... 74 common frames omitted
+2019-09-16 17:28:33,163 ERROR [http-nio-9001-exec-5] o.a.c.c.C.[.[.[.[dispatcherServlet] [DirectJDKLog.java : 175] Servlet.service() for servlet [dispatcherServlet] in context with path [/icbt] threw exception
+org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.binding.BindingException: Parameter 'userName' not found. Available parameters are [arg1, arg0, param1, param2]
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:78)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:440)
+	at com.sun.proxy.$Proxy105.selectOne(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectOne(SqlSessionTemplate.java:159)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:87)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:57)
+	at com.sun.proxy.$Proxy106.findUserByUserNameAndPassword(Unknown Source)
+	at cc.saxfore.icbt.service.impl.IcUserServiceImpl.findUserByUserNameAndPassword(IcUserServiceImpl.java:72)
+	at cc.saxfore.icbt.component.ICAuthenticationManager.authenticate(ICAuthenticationManager.java:50)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:343)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:205)
+	at com.sun.proxy.$Proxy120.authenticate(Unknown Source)
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:200)
+	at org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter.attemptAuthentication(UsernamePasswordAuthenticationFilter.java:94)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:212)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.csrf.CsrfFilter.doFilterInternal(CsrfFilter.java:124)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:109)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:74)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:109)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:109)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:357)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:270)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:109)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:109)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:109)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:114)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:104)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:109)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:109)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:853)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1587)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.ibatis.binding.BindingException: Parameter 'userName' not found. Available parameters are [arg1, arg0, param1, param2]
+	at org.apache.ibatis.binding.MapperMethod$ParamMap.get(MapperMethod.java:212)
+	at org.apache.ibatis.reflection.wrapper.MapWrapper.get(MapWrapper.java:45)
+	at org.apache.ibatis.reflection.MetaObject.getValue(MetaObject.java:122)
+	at org.apache.ibatis.executor.BaseExecutor.createCacheKey(BaseExecutor.java:219)
+	at org.apache.ibatis.executor.CachingExecutor.createCacheKey(CachingExecutor.java:146)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:82)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:140)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectOne(DefaultSqlSession.java:76)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:426)
+	... 74 common frames omitted
+2019-09-16 17:28:50,247 INFO [Thread-59] org.quartz.core.QuartzScheduler [QuartzScheduler.java : 585] Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2019-09-16 17:28:50,251 INFO [Thread-59] o.s.s.c.ThreadPoolTaskScheduler [ExecutorConfigurationSupport.java : 208] Shutting down ExecutorService 'taskScheduler'
+2019-09-16 17:28:50,251 INFO [Thread-59] o.s.s.quartz.SchedulerFactoryBean [SchedulerFactoryBean.java : 844] Shutting down Quartz Scheduler
+2019-09-16 17:28:50,252 INFO [Thread-59] org.quartz.core.QuartzScheduler [QuartzScheduler.java : 666] Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2019-09-16 17:28:50,252 INFO [Thread-59] org.quartz.core.QuartzScheduler [QuartzScheduler.java : 585] Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2019-09-16 17:28:50,253 INFO [Thread-59] org.quartz.core.QuartzScheduler [QuartzScheduler.java : 740] Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2019-09-16 17:28:50,254 INFO [Thread-59] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java : 208] Shutting down ExecutorService 'applicationTaskExecutor'
+2019-09-16 17:31:00,278 INFO [restartedMain] cc.saxfore.icbt.IcbtUserApplication [StartupInfoLogger.java : 50] Starting IcbtUserApplication on MacBook.local with PID 7711 (/Users/john/gitHub-workspace/icbt-user/target/classes started by john in /Users/john/gitHub-workspace/icbt-user)
+2019-09-16 17:31:00,281 INFO [restartedMain] cc.saxfore.icbt.IcbtUserApplication [SpringApplication.java : 646] No active profile set, falling back to default profiles: default
+2019-09-16 17:31:00,315 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java : 225] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-09-16 17:31:00,315 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java : 225] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-09-16 17:31:01,243 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java : 244] Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-09-16 17:31:01,245 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java : 126] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-09-16 17:31:01,274 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java : 182] Finished Spring Data repository scanning in 19ms. Found 0 repository interfaces.
+2019-09-16 17:31:01,708 INFO [restartedMain] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 330] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c7d17131] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-16 17:31:02,229 INFO [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer [TomcatWebServer.java : 90] Tomcat initialized with port(s): 9001 (http)
+2019-09-16 17:31:02,239 INFO [restartedMain] o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java : 173] Initializing ProtocolHandler ["http-nio-9001"]
+2019-09-16 17:31:02,245 INFO [restartedMain] o.a.catalina.core.StandardService [DirectJDKLog.java : 173] Starting service [Tomcat]
+2019-09-16 17:31:02,245 INFO [restartedMain] o.a.catalina.core.StandardEngine [DirectJDKLog.java : 173] Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-09-16 17:31:02,315 INFO [restartedMain] o.a.c.c.C.[.[localhost].[/icbt] [DirectJDKLog.java : 173] Initializing Spring embedded WebApplicationContext
+2019-09-16 17:31:02,315 INFO [restartedMain] o.s.web.context.ContextLoader [ServletWebServerApplicationContext.java : 283] Root WebApplicationContext: initialization completed in 2000 ms
+2019-09-16 17:31:02,979 INFO [restartedMain] c.s.icbt.common.filter.IcbtFilter [IcbtFilter.java : 29] icbtFilter init ...
+2019-09-16 17:31:03,712 INFO [restartedMain] o.s.s.web.DefaultSecurityFilterChain [DefaultSecurityFilterChain.java : 43] Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1e3bf5a5, org.springframework.security.web.context.SecurityContextPersistenceFilter@25438bde, org.springframework.security.web.header.HeaderWriterFilter@830b8aa, org.springframework.security.web.csrf.CsrfFilter@670ce36a, org.springframework.security.web.authentication.logout.LogoutFilter@40e913b0, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@3e0e2a6, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@39a2a1f2, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@cb65a64, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@25d89da, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@9e4db6, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@298fa49c, org.springframework.security.web.session.SessionManagementFilter@32fe8357, org.springframework.security.web.access.ExceptionTranslationFilter@739f82a1, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@16bb73a7]
+2019-09-16 17:31:04,020 INFO [restartedMain] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java : 171] Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-16 17:31:04,686 INFO [restartedMain] com.zaxxer.hikari.HikariDataSource [HikariDataSource.java : 110] DatebookHikariCP - Starting...
+2019-09-16 17:31:04,792 INFO [restartedMain] com.zaxxer.hikari.HikariDataSource [HikariDataSource.java : 123] DatebookHikariCP - Start completed.
+2019-09-16 17:31:04,826 INFO [restartedMain] org.quartz.impl.StdSchedulerFactory [StdSchedulerFactory.java : 1208] Using default implementation for ThreadExecutor
+2019-09-16 17:31:04,835 INFO [restartedMain] o.quartz.core.SchedulerSignalerImpl [SchedulerSignalerImpl.java : 61] Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2019-09-16 17:31:04,835 INFO [restartedMain] org.quartz.core.QuartzScheduler [QuartzScheduler.java : 229] Quartz Scheduler v.2.3.1 created.
+2019-09-16 17:31:04,836 INFO [restartedMain] org.quartz.simpl.RAMJobStore [RAMJobStore.java : 155] RAMJobStore initialized.
+2019-09-16 17:31:04,837 INFO [restartedMain] org.quartz.core.QuartzScheduler [QuartzScheduler.java : 294] Scheduler meta-data: Quartz Scheduler (v2.3.1) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2019-09-16 17:31:04,837 INFO [restartedMain] org.quartz.impl.StdSchedulerFactory [StdSchedulerFactory.java : 1362] Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2019-09-16 17:31:04,837 INFO [restartedMain] org.quartz.impl.StdSchedulerFactory [StdSchedulerFactory.java : 1366] Quartz scheduler version: 2.3.1
+2019-09-16 17:31:04,837 INFO [restartedMain] org.quartz.core.QuartzScheduler [QuartzScheduler.java : 2293] JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@79e851d7
+2019-09-16 17:31:04,867 INFO [restartedMain] o.s.b.a.e.web.EndpointLinksResolver [EndpointLinksResolver.java : 58] Exposing 15 endpoint(s) beneath base path '/actuator'
+2019-09-16 17:31:04,921 INFO [restartedMain] o.s.s.c.ThreadPoolTaskScheduler [ExecutorConfigurationSupport.java : 171] Initializing ExecutorService 'taskScheduler'
+2019-09-16 17:31:05,019 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java : 57] LiveReload server is running on port 35729
+2019-09-16 17:31:05,075 INFO [restartedMain] o.s.s.quartz.SchedulerFactoryBean [SchedulerFactoryBean.java : 726] Starting Quartz Scheduler now
+2019-09-16 17:31:05,075 INFO [restartedMain] org.quartz.core.QuartzScheduler [QuartzScheduler.java : 547] Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2019-09-16 17:31:05,091 INFO [restartedMain] o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java : 173] Starting ProtocolHandler ["http-nio-9001"]
+2019-09-16 17:31:05,125 INFO [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer [TomcatWebServer.java : 202] Tomcat started on port(s): 9001 (http) with context path '/icbt'
+2019-09-16 17:31:05,130 INFO [restartedMain] cc.saxfore.icbt.IcbtUserApplication [StartupInfoLogger.java : 59] Started IcbtUserApplication in 25.192 seconds (JVM running for 30.863)
+2019-09-16 17:31:05,632 INFO [RMI TCP Connection(4)-192.168.200.32] o.a.c.c.C.[.[localhost].[/icbt] [DirectJDKLog.java : 173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-09-16 17:31:05,634 INFO [RMI TCP Connection(4)-192.168.200.32] o.s.web.servlet.DispatcherServlet [FrameworkServlet.java : 524] Initializing Servlet 'dispatcherServlet'
+2019-09-16 17:31:05,650 INFO [RMI TCP Connection(4)-192.168.200.32] o.s.web.servlet.DispatcherServlet [FrameworkServlet.java : 546] Completed initialization in 16 ms
+2019-09-16 17:31:05,740 INFO [parallel-1] io.lettuce.core.EpollProvider [EpollProvider.java : 68] Starting without optional epoll library
+2019-09-16 17:31:05,741 INFO [parallel-1] io.lettuce.core.KqueueProvider [KqueueProvider.java : 70] Starting without optional kqueue library
+2019-09-16 17:31:55,481 INFO [http-nio-9001-exec-2] c.s.icbt.config.WebSecurityConfig [WebSecurityConfig.java : 69] WebSecurityConfig 登录成功...
+2019-09-16 17:32:32,852 INFO [Thread-59] org.quartz.core.QuartzScheduler [QuartzScheduler.java : 585] Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2019-09-16 17:32:32,856 INFO [Thread-59] o.s.s.c.ThreadPoolTaskScheduler [ExecutorConfigurationSupport.java : 208] Shutting down ExecutorService 'taskScheduler'
+2019-09-16 17:32:32,856 INFO [Thread-59] o.s.s.quartz.SchedulerFactoryBean [SchedulerFactoryBean.java : 844] Shutting down Quartz Scheduler
+2019-09-16 17:32:32,856 INFO [Thread-59] org.quartz.core.QuartzScheduler [QuartzScheduler.java : 666] Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2019-09-16 17:32:32,857 INFO [Thread-59] org.quartz.core.QuartzScheduler [QuartzScheduler.java : 585] Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2019-09-16 17:32:32,857 INFO [Thread-59] org.quartz.core.QuartzScheduler [QuartzScheduler.java : 740] Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2019-09-16 17:32:32,858 INFO [Thread-59] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java : 208] Shutting down ExecutorService 'applicationTaskExecutor'

@@ -1,5 +1,6 @@
 package cc.saxfore.icbt.service;
 
+import cc.saxfore.icbt.common.entity.IcRole;
 import cc.saxfore.icbt.common.entity.IcUser;
 
 import java.util.List;
@@ -11,7 +12,7 @@ import java.util.List;
  * 创建时间：2019/9/6 2:53 PM
  * 创 建 人：wangjiang
  */
-public interface IUserService {
+public interface IcUserService {
 
 
     int deleteByPrimaryKey(String id);
@@ -25,6 +26,12 @@ public interface IUserService {
     int updateByPrimaryKeySelective(IcUser record);
 
     int updateByPrimaryKey(IcUser record);
+
+    IcUser findUserByUserName(String userName);
+
+    IcUser findUserByUserNameAndPassword(String userName, String password);
+
+    List<IcRole> findRoleByUserName(String userName);
 
     List<IcUser> listAll();
 
