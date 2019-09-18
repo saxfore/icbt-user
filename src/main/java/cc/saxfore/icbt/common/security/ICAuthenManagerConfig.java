@@ -1,4 +1,4 @@
-package cc.saxfore.icbt.security;
+package cc.saxfore.icbt.common.security;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -89,7 +89,7 @@ public class ICAuthenManagerConfig extends WebSecurityConfigurerAdapter {
      * 启用自定义的{@link ICAuthenManager}做权限认证
      * super.configure(auth) 代表spring从ioc容器中查找权限认证的类
      * <p>
-     * 此方法与{@link cc.saxfore.icbt.security.ICUserDetailConfig#configure(AuthenticationManagerBuilder auth)}等效,区别在于自定义切入时机不同
+     * 此方法与{@link cc.saxfore.icbt.common.security.ICUserDetailConfig#configure(AuthenticationManagerBuilder auth)}等效,区别在于自定义切入时机不同
      * 自定义切入时机顺序：ICAuthenticationManager ---> AuthenticationProvider ---> UserDetailsService
      *
      * @param auth

@@ -1,11 +1,11 @@
 package cc.saxfore.icbt.service.impl;
 
-import cc.saxfore.icbt.common.entity.example.IcUserRoleExample;
+import cc.saxfore.icbt.common.entity.userrole.IcUserRoleExample;
 import cc.saxfore.icbt.mapper.IcUserRoleMapper;
 import cc.saxfore.icbt.service.IcUserRoleService;
 import org.springframework.stereotype.Service;
 import javax.annotation.Resource;
-import cc.saxfore.icbt.common.entity.IcUserRole;
+import cc.saxfore.icbt.common.entity.userrole.IcUserRole;
 import java.util.List;
 
 /**

@@ -1,8 +1,10 @@
 package cc.saxfore.icbt.service.impl;
 
-import cc.saxfore.icbt.common.entity.*;
-import cc.saxfore.icbt.common.entity.example.IcRoleExample;
-import cc.saxfore.icbt.common.entity.example.IcUserRoleExample;
+import cc.saxfore.icbt.common.entity.role.IcRoleExample;
+import cc.saxfore.icbt.common.entity.user.IcUser;
+import cc.saxfore.icbt.common.entity.userrole.IcUserRoleExample;
+import cc.saxfore.icbt.common.entity.role.IcRole;
+import cc.saxfore.icbt.common.entity.userrole.IcUserRole;
 import cc.saxfore.icbt.mapper.IcUserMapper;
 import cc.saxfore.icbt.service.IcRoleService;
 import cc.saxfore.icbt.service.IcUserRoleService;

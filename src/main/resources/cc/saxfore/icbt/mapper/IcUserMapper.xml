@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="cc.saxfore.icbt.mapper.IcUserMapper">
-    <resultMap id="BaseResultMap" type="cc.saxfore.icbt.common.entity.IcUser">
+    <resultMap id="BaseResultMap" type="cc.saxfore.icbt.common.entity.user.IcUser">
         
         <id column="id" jdbcType="VARCHAR" property="id"/>
         <result column="user_name" jdbcType="VARCHAR" property="userName"/>
@@ -31,7 +31,7 @@
         delete from ic_user
         where id = #{id,jdbcType=VARCHAR}
     </delete>
-    <insert id="insert" parameterType="cc.saxfore.icbt.common.entity.IcUser">
+    <insert id="insert" parameterType="cc.saxfore.icbt.common.entity.user.IcUser">
         
         insert into ic_user (id, user_name, user_pwd,
         user_nick, phone, email,
@@ -42,7 +42,7 @@
         #{userNo,jdbcType=VARCHAR}, #{createTime,jdbcType=TIMESTAMP}, #{createUser,jdbcType=VARCHAR},
         #{updateTime,jdbcType=TIMESTAMP}, #{updateUser,jdbcType=VARCHAR})
     </insert>
-    <insert id="insertSelective" parameterType="cc.saxfore.icbt.common.entity.IcUser">
+    <insert id="insertSelective" parameterType="cc.saxfore.icbt.common.entity.user.IcUser">
         
         insert into ic_user
         <trim prefix="(" suffix=")" suffixOverrides=",">
@@ -116,7 +116,7 @@
             </if>
         </trim>
     </insert>
-    <update id="updateByPrimaryKeySelective" parameterType="cc.saxfore.icbt.common.entity.IcUser">
+    <update id="updateByPrimaryKeySelective" parameterType="cc.saxfore.icbt.common.entity.user.IcUser">
         
         update ic_user
         <set>
@@ -153,7 +153,7 @@
         </set>
         where id = #{id,jdbcType=VARCHAR}
     </update>
-    <update id="updateByPrimaryKey" parameterType="cc.saxfore.icbt.common.entity.IcUser">
+    <update id="updateByPrimaryKey" parameterType="cc.saxfore.icbt.common.entity.user.IcUser">
         
         update ic_user
         set user_name = #{userName,jdbcType=VARCHAR},

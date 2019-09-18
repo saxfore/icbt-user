@@ -1,7 +1,7 @@
 package cc.saxfore.icbt.service;
 
-import cc.saxfore.icbt.common.entity.IcRole;
-import cc.saxfore.icbt.common.entity.IcUser;
+import cc.saxfore.icbt.common.entity.role.IcRole;
+import cc.saxfore.icbt.common.entity.user.IcUser;
 
 import java.util.List;
 

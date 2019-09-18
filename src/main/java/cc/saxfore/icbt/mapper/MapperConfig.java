@@ -1,4 +1,4 @@
-package cc.saxfore.icbt.config;
+package cc.saxfore.icbt.mapper;
 
 import org.mybatis.spring.annotation.MapperScan;
 import org.mybatis.spring.annotation.MapperScans;

@@ -1,6 +1,6 @@
-package cc.saxfore.icbt.component;
+package cc.saxfore.icbt.common.schedule;
 
-import cc.saxfore.icbt.common.entity.IcUser;
+import cc.saxfore.icbt.common.entity.user.IcUser;
 import cc.saxfore.icbt.service.IcUserService;
 import com.google.gson.Gson;
 import org.slf4j.Logger;

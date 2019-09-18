@@ -1,6 +1,6 @@
 package cc.saxfore.icbt.mapper;
 
-import cc.saxfore.icbt.common.entity.IcUser;
+import cc.saxfore.icbt.common.entity.user.IcUser;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;

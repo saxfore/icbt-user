@@ -1,6 +1,6 @@
-package cc.saxfore.icbt.security;
+package cc.saxfore.icbt.common.security;
 
-import cc.saxfore.icbt.common.entity.IcUser;
+import cc.saxfore.icbt.common.entity.user.IcUser;
 import cc.saxfore.icbt.service.IcUserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;

@@ -1,4 +1,6 @@
-package cc.saxfore.icbt.common.entity;
+package cc.saxfore.icbt.common.entity.role;
+
+import cc.saxfore.icbt.common.entity.IcBaseEntity;
 
 /**
  * 项目名称：icbt-user

@@ -1,4 +1,4 @@
-package cc.saxfore.icbt.common.entity;
+package cc.saxfore.icbt.common.entity.userrole;
 
 /**
  * 项目名称：icbt-user

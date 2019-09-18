@@ -1,4 +1,4 @@
-package cc.saxfore.icbt.config;
+package cc.saxfore.icbt.common.schedule;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.scheduling.annotation.EnableAsync;

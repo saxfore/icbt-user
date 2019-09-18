@@ -1,7 +1,7 @@
-package cc.saxfore.icbt.security;
+package cc.saxfore.icbt.common.security;
 
-import cc.saxfore.icbt.common.entity.IcRole;
-import cc.saxfore.icbt.common.entity.IcUser;
+import cc.saxfore.icbt.common.entity.role.IcRole;
+import cc.saxfore.icbt.common.entity.user.IcUser;
 import cc.saxfore.icbt.common.exception.ICNotSupportAuthen;
 import cc.saxfore.icbt.common.util.ICStringUtil;
 import cc.saxfore.icbt.service.IcUserService;
@@ -13,7 +13,6 @@ import org.springframework.security.core.Authentication;
 import org.springframework.security.core.AuthenticationException;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
-import org.springframework.stereotype.Component;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;

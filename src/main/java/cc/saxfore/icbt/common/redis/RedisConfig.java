@@ -1,4 +1,4 @@
-package cc.saxfore.icbt.config;
+package cc.saxfore.icbt.common.redis;
 
 import com.fasterxml.jackson.annotation.JsonAutoDetect;
 import com.fasterxml.jackson.annotation.PropertyAccessor;

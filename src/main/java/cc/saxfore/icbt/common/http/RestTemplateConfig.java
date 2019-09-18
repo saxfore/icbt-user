@@ -1,4 +1,4 @@
-package cc.saxfore.icbt.config;
+package cc.saxfore.icbt.common.http;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -13,7 +13,7 @@ import org.springframework.web.client.RestTemplate;
  * 创 建 人：wangjiang
  */
 @Configuration
-public class BeanCnfig {
+public class RestTemplateConfig {
 
     @Bean
     public RestTemplate restTemplate() {

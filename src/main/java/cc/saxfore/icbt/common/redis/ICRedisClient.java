@@ -1,4 +1,4 @@
-package cc.saxfore.icbt.component;
+package cc.saxfore.icbt.common.redis;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.StringRedisTemplate;

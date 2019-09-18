@@ -1,7 +1,7 @@
-package cc.saxfore.icbt.security;
+package cc.saxfore.icbt.common.security;
 
-import cc.saxfore.icbt.common.entity.IcRole;
-import cc.saxfore.icbt.common.entity.IcUser;
+import cc.saxfore.icbt.common.entity.role.IcRole;
+import cc.saxfore.icbt.common.entity.user.IcUser;
 import cc.saxfore.icbt.common.util.ICStringUtil;
 import cc.saxfore.icbt.service.IcUserService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,7 +11,6 @@ import org.springframework.security.authentication.UsernamePasswordAuthenticatio
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.AuthenticationException;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
-import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
 import java.util.List;

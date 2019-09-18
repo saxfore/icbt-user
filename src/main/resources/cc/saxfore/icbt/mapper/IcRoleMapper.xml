@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="cc.saxfore.icbt.mapper.IcRoleMapper">
-  <resultMap id="BaseResultMap" type="cc.saxfore.icbt.common.entity.IcRole">
+  <resultMap id="BaseResultMap" type="cc.saxfore.icbt.common.entity.role.IcRole">
     <!--@mbg.generated-->
     <id column="id" jdbcType="VARCHAR" property="id" />
     <result column="role_name" jdbcType="VARCHAR" property="roleName" />
@@ -76,7 +76,7 @@
     <!--@mbg.generated-->
     id, role_name, role_desc, create_time, create_user, update_time, update_user, del_flag
   </sql>
-  <select id="selectByExample" parameterType="cc.saxfore.icbt.common.entity.example.IcRoleExample" resultMap="BaseResultMap">
+  <select id="selectByExample" parameterType="cc.saxfore.icbt.common.entity.role.IcRoleExample" resultMap="BaseResultMap">
     <!--@mbg.generated-->
     select
     <if test="distinct">
@@ -103,14 +103,14 @@
     delete from ic_role
     where id = #{id,jdbcType=VARCHAR}
   </delete>
-  <delete id="deleteByExample" parameterType="cc.saxfore.icbt.common.entity.example.IcRoleExample">
+  <delete id="deleteByExample" parameterType="cc.saxfore.icbt.common.entity.role.IcRoleExample">
     <!--@mbg.generated-->
     delete from ic_role
     <if test="_parameter != null">
       <include refid="Example_Where_Clause" />
     </if>
   </delete>
-  <insert id="insert" parameterType="cc.saxfore.icbt.common.entity.IcRole">
+  <insert id="insert" parameterType="cc.saxfore.icbt.common.entity.role.IcRole">
     <!--@mbg.generated-->
     insert into ic_role (id, role_name, role_desc, 
       create_time, create_user, update_time, 
@@ -119,7 +119,7 @@
       #{createTime,jdbcType=TIMESTAMP}, #{createUser,jdbcType=VARCHAR}, #{updateTime,jdbcType=TIMESTAMP}, 
       #{updateUser,jdbcType=TIMESTAMP}, #{delFlag,jdbcType=VARCHAR})
   </insert>
-  <insert id="insertSelective" parameterType="cc.saxfore.icbt.common.entity.IcRole">
+  <insert id="insertSelective" parameterType="cc.saxfore.icbt.common.entity.role.IcRole">
     <!--@mbg.generated-->
     insert into ic_role
     <trim prefix="(" suffix=")" suffixOverrides=",">
@@ -175,7 +175,7 @@
       </if>
     </trim>
   </insert>
-  <select id="countByExample" parameterType="cc.saxfore.icbt.common.entity.example.IcRoleExample" resultType="java.lang.Long">
+  <select id="countByExample" parameterType="cc.saxfore.icbt.common.entity.role.IcRoleExample" resultType="java.lang.Long">
     <!--@mbg.generated-->
     select count(*) from ic_role
     <if test="_parameter != null">
@@ -230,7 +230,7 @@
       <include refid="Update_By_Example_Where_Clause" />
     </if>
   </update>
-  <update id="updateByPrimaryKeySelective" parameterType="cc.saxfore.icbt.common.entity.IcRole">
+  <update id="updateByPrimaryKeySelective" parameterType="cc.saxfore.icbt.common.entity.role.IcRole">
     <!--@mbg.generated-->
     update ic_role
     <set>
@@ -258,7 +258,7 @@
     </set>
     where id = #{id,jdbcType=VARCHAR}
   </update>
-  <update id="updateByPrimaryKey" parameterType="cc.saxfore.icbt.common.entity.IcRole">
+  <update id="updateByPrimaryKey" parameterType="cc.saxfore.icbt.common.entity.role.IcRole">
     <!--@mbg.generated-->
     update ic_role
     set role_name = #{roleName,jdbcType=VARCHAR},

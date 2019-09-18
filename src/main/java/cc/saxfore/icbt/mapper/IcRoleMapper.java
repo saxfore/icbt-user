@@ -1,7 +1,7 @@
 package cc.saxfore.icbt.mapper;
 
-import cc.saxfore.icbt.common.entity.IcRole;
-import cc.saxfore.icbt.common.entity.example.IcRoleExample;
+import cc.saxfore.icbt.common.entity.role.IcRole;
+import cc.saxfore.icbt.common.entity.role.IcRoleExample;
 import java.util.List;
 import org.apache.ibatis.annotations.Param;
 

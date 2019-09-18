@@ -1,4 +1,6 @@
-package cc.saxfore.icbt.common.entity;
+package cc.saxfore.icbt.common.entity.user;
+
+import cc.saxfore.icbt.common.entity.IcBaseEntity;
 
 import java.util.Date;
 

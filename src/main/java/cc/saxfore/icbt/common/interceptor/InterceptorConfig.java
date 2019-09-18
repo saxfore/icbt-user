@@ -1,4 +1,4 @@
-package cc.saxfore.icbt.config;
+package cc.saxfore.icbt.common.interceptor;
 
 import cc.saxfore.icbt.common.interceptor.ApiInterceptor;
 import cc.saxfore.icbt.common.interceptor.LoginInterceptor;

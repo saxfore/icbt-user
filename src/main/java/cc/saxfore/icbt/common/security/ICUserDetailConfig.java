@@ -1,4 +1,4 @@
-package cc.saxfore.icbt.security;
+package cc.saxfore.icbt.common.security;
 
 import cc.saxfore.icbt.common.util.ICJsonUtil;
 import org.slf4j.Logger;

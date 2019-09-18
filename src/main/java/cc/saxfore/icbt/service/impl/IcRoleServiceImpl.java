@@ -5,8 +5,8 @@ import cc.saxfore.icbt.service.IcRoleService;
 import org.springframework.stereotype.Service;
 import javax.annotation.Resource;
 import java.util.List;
-import cc.saxfore.icbt.common.entity.IcRole;
-import cc.saxfore.icbt.common.entity.example.IcRoleExample;
+import cc.saxfore.icbt.common.entity.role.IcRole;
+import cc.saxfore.icbt.common.entity.role.IcRoleExample;
 
 /**
  * 项目名称：icbt-user

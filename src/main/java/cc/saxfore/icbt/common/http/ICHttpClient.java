@@ -1,4 +1,4 @@
-package cc.saxfore.icbt.component;
+package cc.saxfore.icbt.common.http;
 
 import cc.saxfore.icbt.common.util.ICJsonUtil;
 import org.slf4j.Logger;

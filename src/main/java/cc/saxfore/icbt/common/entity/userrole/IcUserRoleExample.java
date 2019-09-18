@@ -1,4 +1,4 @@
-package cc.saxfore.icbt.common.entity.example;
+package cc.saxfore.icbt.common.entity.userrole;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -2,10 +2,10 @@ package cc.saxfore.icbt.controller;
 
 import cc.saxfore.icbt.common.IConst;
 import cc.saxfore.icbt.common.base.ICResponse;
-import cc.saxfore.icbt.common.entity.IcUser;
+import cc.saxfore.icbt.common.entity.user.IcUser;
 import cc.saxfore.icbt.common.util.ICJsonUtil;
 import cc.saxfore.icbt.common.util.ICRespResult;
-import cc.saxfore.icbt.component.ICRedisClient;
+import cc.saxfore.icbt.common.redis.ICRedisClient;
 import cc.saxfore.icbt.service.IcUserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;

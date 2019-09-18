@@ -1,10 +1,10 @@
 package cc.saxfore.icbt.mapper;
 
-import cc.saxfore.icbt.common.entity.IcUserRole;
+import cc.saxfore.icbt.common.entity.userrole.IcUserRole;
 
 import java.util.List;
 
-import cc.saxfore.icbt.common.entity.example.IcUserRoleExample;
+import cc.saxfore.icbt.common.entity.userrole.IcUserRoleExample;
 import org.apache.ibatis.annotations.Param;
 
 /**
