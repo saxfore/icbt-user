@@ -79,7 +79,7 @@ public class ICUserDetailConfig extends WebSecurityConfigurerAdapter {
                 //.passwordParameter("")
 
                 // 登录失败转发
-                //.failureForwardUrl("")
+                .failureForwardUrl("/error.html")
 
                 // 登录失败回调方法
                 .failureHandler((httpServletRequest, httpServletResponse, authenticationException) -> {
